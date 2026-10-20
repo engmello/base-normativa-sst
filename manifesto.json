@@ -1,0 +1,157 @@
+{
+  "nome": "Base normativa SST",
+  "descricao": "Fonte única das tabelas, parâmetros e regras normativas consultadas pelo Ronda SST. Cada item registra a fonte oficial, a versão, a vigência e quem conferiu.",
+  "statusValidos": {
+    "aguardando-fonte": "Estrutura criada; falta o documento oficial para extrair os dados. O app não usa.",
+    "rascunho": "Dados extraídos (do app ou de PDF), ainda não conferidos com a fonte oficial. O app usa com aviso.",
+    "conferido": "Conferido item a item com a fonte oficial pelo responsável técnico. O app usa normalmente."
+  },
+  "itens": [
+    {
+      "id": "esocial-tabela-24",
+      "titulo": "eSocial – Tabela 24: Agentes nocivos e atividades (aposentadoria especial)",
+      "tipo": "tabela",
+      "arquivo": "tabelas/esocial/tabela-24.csv",
+      "colunas": ["codigo", "descricao"],
+      "fonte": {
+        "orgao": "eSocial (gov.br)",
+        "ato": "Leiautes do eSocial S-1.3 – Anexo I: Tabelas",
+        "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-cons-ate-nt-04-2025-rev-26-08-2025/index.html/tabelas.html",
+        "pdf": ""
+      },
+      "versao": "",
+      "vigencia": { "inicio": "", "fim": "" },
+      "status": "aguardando-fonte",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["Catálogo de riscos", "S-2240", "PPP", "LTCAT"],
+      "monitor": ["esocial-tabelas-s13", "esocial-documentacao"]
+    },
+    {
+      "id": "esocial-tabela-27",
+      "titulo": "eSocial – Tabela 27: Procedimentos diagnósticos",
+      "tipo": "tabela",
+      "arquivo": "tabelas/esocial/tabela-27.csv",
+      "colunas": ["codigo", "descricao"],
+      "fonte": {
+        "orgao": "eSocial (gov.br)",
+        "ato": "Leiautes do eSocial S-1.3 – Anexo I: Tabelas",
+        "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-cons-ate-nt-04-2025-rev-26-08-2025/index.html/tabelas.html",
+        "pdf": ""
+      },
+      "versao": "",
+      "vigencia": { "inicio": "", "fim": "" },
+      "status": "aguardando-fonte",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["ASO", "S-2220"],
+      "monitor": ["esocial-tabelas-s13", "esocial-documentacao"]
+    },
+    {
+      "id": "pgr-matriz",
+      "titulo": "PGR – Matriz de risco (efeitos × perfil de exposição) e Quadro 2 de ações",
+      "tipo": "parametro",
+      "arquivo": "parametros/pgr-matriz.json",
+      "fonte": {
+        "orgao": "Metodologia adotada pela consultoria",
+        "ato": "NR-01 (gerenciamento de riscos ocupacionais) – a NR exige critério documentado, não fixa a matriz",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["PGR", "Inventário de riscos", "Plano de ação"],
+      "monitor": ["mte-nrs"]
+    },
+    {
+      "id": "ruido-criterios",
+      "titulo": "Ruído – critérios NHO 01 e NR-15 Anexo 1",
+      "tipo": "parametro",
+      "arquivo": "parametros/ruido.json",
+      "fonte": {
+        "orgao": "Fundacentro / MTE",
+        "ato": "NHO 01 (Fundacentro); NR-15, Anexo 1; NR-09, Anexo 1",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["Calculadora", "Fatores de risco", "LTCAT", "Interpretação automática"],
+      "monitor": ["mte-nrs"]
+    },
+    {
+      "id": "calor-criterios",
+      "titulo": "Calor – IBUTG, limite de exposição e nível de ação",
+      "tipo": "parametro",
+      "arquivo": "parametros/calor.json",
+      "fonte": {
+        "orgao": "MTE / Fundacentro",
+        "ato": "NR-09, Anexo 3; NR-15, Anexo 3; NHO 06",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["Calculadora"],
+      "monitor": ["mte-nrs"]
+    },
+    {
+      "id": "vibracao-criterios",
+      "titulo": "Vibração – limites de corpo inteiro e mãos e braços",
+      "tipo": "parametro",
+      "arquivo": "parametros/vibracao.json",
+      "fonte": {
+        "orgao": "MTE / Fundacentro",
+        "ato": "NR-09, Anexo 1; NR-15, Anexo 8; NHO 09 e NHO 10",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["Catálogo de riscos", "Fatores de risco"],
+      "monitor": ["mte-nrs"]
+    },
+    {
+      "id": "nr07-exames-por-agente",
+      "titulo": "NR-07 – Exames sugeridos por agente ou atividade",
+      "tipo": "regra",
+      "arquivo": "regras/exames-por-agente.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-07, Anexos I e II; NR-35; NR-10; CLT art. 168 (toxicológico)",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["PCMSO", "Medicina (ASO)", "Fatores de risco"],
+      "monitor": ["mte-nrs"]
+    },
+    {
+      "id": "nr07-prazos",
+      "titulo": "NR-07 – Periodicidades e prazos",
+      "tipo": "regra",
+      "arquivo": "regras/nr07-prazos.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-07",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": { "inicio": "2026-10-20", "fim": "" },
+      "status": "rascunho",
+      "conferido": { "por": "", "em": "" },
+      "usadoEm": ["PCMSO", "Medicina (ASO)", "Conferência técnica"],
+      "monitor": ["mte-nrs"]
+    }
+  ]
+}

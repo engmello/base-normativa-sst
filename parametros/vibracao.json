@@ -1,0 +1,5 @@
+{
+  "vci": { "nome": "Vibração de corpo inteiro", "limite": { "aren_ms2": 1.1, "VDVR_ms175": 21.0 }, "nivelDeAcao": { "aren_ms2": 0.5, "VDVR_ms175": 9.1 } },
+  "vmb": { "nome": "Vibração de mãos e braços", "limite": { "aren_ms2": 5.0 }, "nivelDeAcao": { "aren_ms2": 2.5 } },
+  "observacoes": ["Valores transcritos de memória para o rascunho; conferir com a NR-09, Anexo 1 antes de marcar como conferido."]
+}

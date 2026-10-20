@@ -1,0 +1,15 @@
+{
+  "criterios": {
+    "nho01": { "nome": "NHO 01 (Fundacentro)", "uso": "Aposentadoria especial e PGR", "limite_dBA": 85, "q": 3, "k": 10, "nivelDeAcao_dBA": 82, "jornadaRefMin": 480 },
+    "nr15": { "nome": "NR-15, Anexo 1", "uso": "Insalubridade", "limite_dBA": 85, "q": 5, "k": 16.61, "nivelDeAcao_dBA": 80, "jornadaRefMin": 480 }
+  },
+  "formulas": {
+    "NE": "k · log10((480 / Te) · (dose / 100)) + 85",
+    "NEN": "NE + k · log10(Te / 480)",
+    "dose8h": "100 · 2^((NEN − 85) / q)"
+  },
+  "observacoes": [
+    "Para ruído, o EPI não descaracteriza o tempo especial (entendimento do STF no ARE 664.335) — conferir redação vigente antes de publicar.",
+    "Ruído de impacto: limite próprio no Anexo 2 da NR-15 (não coberto por este arquivo)."
+  ]
+}

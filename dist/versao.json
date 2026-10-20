@@ -1,0 +1,55 @@
+{
+ "versao": "2026.10.20-94be30",
+ "hash": "94be303345f4",
+ "gerado": "2026-10-20T23:27:57.588Z",
+ "itens": {
+  "esocial-tabela-24": {
+   "versao": "",
+   "status": "aguardando-fonte",
+   "hash": "a7bf9456693f",
+   "titulo": "eSocial – Tabela 24: Agentes nocivos e atividades (aposentadoria especial)"
+  },
+  "esocial-tabela-27": {
+   "versao": "",
+   "status": "aguardando-fonte",
+   "hash": "8e1582ec8511",
+   "titulo": "eSocial – Tabela 27: Procedimentos diagnósticos"
+  },
+  "pgr-matriz": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "226abc6a36bf",
+   "titulo": "PGR – Matriz de risco (efeitos × perfil de exposição) e Quadro 2 de ações"
+  },
+  "ruido-criterios": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "b2aa47ec5771",
+   "titulo": "Ruído – critérios NHO 01 e NR-15 Anexo 1"
+  },
+  "calor-criterios": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "33ac7efc38a6",
+   "titulo": "Calor – IBUTG, limite de exposição e nível de ação"
+  },
+  "vibracao-criterios": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "9460f2ca1041",
+   "titulo": "Vibração – limites de corpo inteiro e mãos e braços"
+  },
+  "nr07-exames-por-agente": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "6c7ff2333289",
+   "titulo": "NR-07 – Exames sugeridos por agente ou atividade"
+  },
+  "nr07-prazos": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "1b9a6a1f8479",
+   "titulo": "NR-07 – Periodicidades e prazos"
+  }
+ }
+}

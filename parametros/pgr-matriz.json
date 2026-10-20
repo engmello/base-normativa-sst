@@ -1,0 +1,32 @@
+{
+  "formula": "nivel = efeito × perfil",
+  "efeitos": [
+    { "valor": 2, "nome": "Leve", "descricao": "Efeitos reversíveis pouco preocupantes ou sem efeitos adversos conhecidos" },
+    { "valor": 4, "nome": "Moderado", "descricao": "Efeitos reversíveis preocupantes" },
+    { "valor": 8, "nome": "Grave", "descricao": "Efeitos reversíveis severos" },
+    { "valor": 16, "nome": "Crítico", "descricao": "Efeitos irreversíveis" },
+    { "valor": 32, "nome": "Risco de vida", "descricao": "Risco de vida ou lesão incapacitante" }
+  ],
+  "perfis": [
+    { "valor": 2, "nome": "Raro", "descricao": "Exposição muito eventual, sem registro de ocorrência" },
+    { "valor": 3, "nome": "Pouco provável", "descricao": "Exposição eventual; ocorrência remota" },
+    { "valor": 5, "nome": "Ocasional", "descricao": "Exposição intermitente; ocorrência possível" },
+    { "valor": 8, "nome": "Provável", "descricao": "Exposição frequente; ocorrência esperada em algum momento" },
+    { "valor": 13, "nome": "Frequente", "descricao": "Exposição habitual e permanente; ocorrência repetida" }
+  ],
+  "quantitativos": {
+    "reducaoSeveridadeAbaixoDePctLT": 30,
+    "regra": "Abaixo de 30% do LT a severidade cai um nível (4→2, 8→4, 16→8); 2 e 32 não mudam",
+    "nivelDeAcaoPctLT": 50
+  },
+  "quadro2": [
+    { "ate": 24.999, "classe": "Baixo", "cor": "verde", "acao": "Gerenciar na busca de melhoria contínua.", "prazoMeses": null },
+    { "ate": 60, "classe": "Médio", "cor": "amarelo", "acao": "Medidas de controle no menor nível razoavelmente alcançável (ALARA), acompanhamento médico e avaliação quantitativa.", "prazoMeses": 12 },
+    { "ate": 120, "classe": "Alto", "cor": "laranja", "acao": "Implementação com prazo máximo de 6 meses: medidas de controle, acompanhamento médico e avaliação quantitativa.", "prazoMeses": 6 },
+    { "ate": null, "classe": "Muito alto", "cor": "vermelho", "acao": "Implementação imediata; aceitabilidade endossada pela direção.", "prazoMeses": 1 }
+  ],
+  "casosDeTeste": [
+    { "caso": "Ruído 91 dB(A), LT 85, irreversível × provável", "efeito": 16, "perfil": 8, "esperado": 128, "classe": "Muito alto" },
+    { "caso": "Fumos 2,1 mg/m³ de LT 5 (42%), severos × provável", "efeito": 8, "perfil": 8, "esperado": 64, "classe": "Alto" }
+  ]
+}

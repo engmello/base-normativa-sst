@@ -1,0 +1,29 @@
+{
+  "descricao": "Sugestões de exames por agente ou atividade. São sugestões a validar pelo médico responsável pelo PCMSO.",
+  "regras": [
+    { "agente": ["ruído"], "exames": [{ "k": "audio", "justificativa": "NR-07, Anexo II: audiometria na admissão, 6 meses após, anualmente e na demissão" }] },
+    { "agente": ["poeira", "sílica"], "exames": [
+      { "k": "rx", "justificativa": "NR-07, Anexo I: radiografia de tórax padrão OIT para poeiras minerais" },
+      { "k": "espiro", "justificativa": "NR-07, Anexo I: espirometria para poeiras minerais" } ] },
+    { "agente": ["fumo"], "exames": [{ "k": "espiro", "justificativa": "Exposição respiratória a fumos metálicos; avaliar indicador biológico do metal (NR-07, Anexo I)" }] },
+    { "agente": ["queda", "altura"], "exames": [
+      { "k": "ecg", "justificativa": "Aptidão para trabalho em altura (NR-35), a critério do médico" },
+      { "k": "visual", "justificativa": "Aptidão para trabalho em altura (NR-35)" },
+      { "k": "glic", "justificativa": "Aptidão para trabalho em altura (NR-35), a critério do médico" } ] },
+    { "agente": ["choque", "energiz"], "exames": [{ "k": "ecg", "justificativa": "Aptidão para serviços em eletricidade (NR-10), a critério do médico" }] },
+    { "agente": ["radia"], "exames": [{ "k": "visual", "justificativa": "Exposição a radiação não ionizante (arco de solda)" }] },
+    { "funcao": ["motorista"], "exames": [{ "k": "toxi", "justificativa": "Motorista profissional: exame toxicológico (CLT, art. 168) e evento S-2221" }] }
+  ],
+  "exames": {
+    "clinico": { "nome": "Exame clínico (anamnese e exame físico)", "periodicidadeMeses": 12 },
+    "audio": { "nome": "Audiometria tonal", "periodicidadeMeses": 12 },
+    "espiro": { "nome": "Espirometria", "periodicidadeMeses": 24 },
+    "hemo": { "nome": "Hemograma completo", "periodicidadeMeses": 12 },
+    "visual": { "nome": "Acuidade visual", "periodicidadeMeses": 12 },
+    "ecg": { "nome": "Eletrocardiograma", "periodicidadeMeses": 12 },
+    "eeg": { "nome": "Eletroencefalograma", "periodicidadeMeses": 24 },
+    "rx": { "nome": "Radiografia de tórax (padrão OIT)", "periodicidadeMeses": 24 },
+    "glic": { "nome": "Glicemia de jejum", "periodicidadeMeses": 12 },
+    "toxi": { "nome": "Exame toxicológico (larga janela)", "periodicidadeMeses": 30 }
+  }
+}

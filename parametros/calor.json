@@ -1,0 +1,10 @@
+{
+  "ibutg": {
+    "semCargaSolar": "0,7 · tbn + 0,3 · tg",
+    "comCargaSolar": "0,7 · tbn + 0,1 · tbs + 0,2 · tg"
+  },
+  "limiteExposicao": "56,7 − 11,5 · log10(M)",
+  "nivelDeAcao": "59,9 − 14,1 · log10(M)",
+  "unidades": { "IBUTG": "°C", "M": "W (taxa metabólica)" },
+  "observacoes": ["As taxas metabólicas por atividade (quadro do Anexo 3) ainda não foram transcritas."]
+}
