@@ -44,6 +44,7 @@ O app nunca usa uma regra "de memória": tudo o que é normativo vem daqui, com 
 node scripts/validar.mjs    # confere manifesto e dados
 node scripts/build.mjs      # gera dist/
 node scripts/monitorar.mjs  # verifica as fontes oficiais (o robô roda isso toda semana)
+node scripts/embutir.mjs ronda-sst.html  # grava a base atual dentro do app
 ```
 
 Não há dependências: só Node 20 ou mais recente.
