@@ -1,5 +1,8 @@
 # Histórico da base normativa
 
+## 2026-10-21 – Tabelas 24 e 27 conferidas
+- Tabela 24 (92 códigos) e Tabela 27 (1.450 códigos), versão S-1.3 consolidada até a NT 07/2026 rev. 20/10/2026, conferidas com o PDF oficial por Osni Ribeiro Mello. Status: conferido.
+
 ## 2026-10-20 – extração automática
 - Novo robô de extração: descobre a nota técnica mais recente do eSocial, baixa o pacote, extrai as Tabelas 24 e 27 do Anexo I e abre uma proposta de mudança para revisão.
 
