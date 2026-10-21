@@ -26,7 +26,7 @@ O app nunca usa uma regra "de memória": tudo o que é normativo vem daqui, com 
 ## Como funciona a atualização
 
 1. **Toda segunda-feira** o robô (`.github/workflows/monitorar.yml`) lê as páginas oficiais de `monitor/fontes.json`. Se aparecer documento novo (nota técnica, leiaute, portaria) ou o endereço quebrar, ele abre uma **issue** com os itens da base que podem ser afetados.
-2. O responsável baixa o documento novo para `fontes/pdf/` e pede ao Claude para extrair a tabela e comparar com a versão atual.
+2. Logo depois, o robô de extração (`.github/workflows/extrair-tabelas.yml`) baixa a nota técnica mais recente do eSocial, extrai as Tabelas 24 e 27 do Anexo I, guarda o PDF em `fontes/pdf/` e abre uma **proposta de mudança (pull request)** com o que entrou, saiu ou mudou. Itens de outras fontes (NRs) ainda são extraídos com o Claude a partir do PDF.
 3. A mudança entra por **pull request**: o robô de validação confere formato, códigos repetidos, vigência e os casos de teste da matriz.
 4. Depois de revisada, o item recebe a nova `versao`, a `vigencia` e `conferido.por` / `conferido.em`, e o status vira `conferido`.
 5. Ao entrar na `main`, o robô gera o `dist/` com a nova versão da base.
@@ -43,6 +43,8 @@ O app nunca usa uma regra "de memória": tudo o que é normativo vem daqui, com 
 ```bash
 node scripts/validar.mjs    # confere manifesto e dados
 node scripts/build.mjs      # gera dist/
+node scripts/baixar.mjs     # baixa a nota técnica mais recente do eSocial
+node scripts/extrair.mjs    # extrai as Tabelas 24 e 27 (precisa de pdftotext)
 node scripts/monitorar.mjs  # verifica as fontes oficiais (o robô roda isso toda semana)
 node scripts/embutir.mjs ronda-sst.html  # grava a base atual dentro do app
 ```

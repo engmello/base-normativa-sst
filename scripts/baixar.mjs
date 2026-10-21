@@ -9,8 +9,20 @@ const { itens } = JSON.parse(readFileSync(raiz + "fontes/download.json", "utf8")
 const dir = raiz + "fontes/bruto/";
 mkdirSync(dir, { recursive: true });
 const registro = [];
+async function descobrir(d) {
+  const r = await fetch(d.pagina, { headers: { "user-agent": "base-normativa-sst/1.0" } });
+  if (!r.ok) throw new Error("página de descoberta: HTTP " + r.status);
+  const html = await r.text();
+  const re = new RegExp(d.padrao, "gi");
+  const ord = Object.fromEntries(d.ordem.split(",").map((x) => x.split("=")).map(([k, v]) => [k, +v]));
+  const achados = [...html.matchAll(/href="([^"]+)"/gi)].map((m) => m[1]).map((href) => { re.lastIndex = 0; const m = re.exec(href); return m && { url: new URL(href.replace(/\/$/, ""), d.pagina).href, ano: +m[ord.ano], numero: +m[ord.numero] }; }).filter(Boolean);
+  if (!achados.length) throw new Error("nenhum link casou com o padrão na página " + d.pagina);
+  achados.sort((a, b) => a.ano - b.ano || a.numero - b.numero);
+  return achados.pop().url;
+}
 for (const it of itens) {
   try {
+    if (it.descobrir) { it.url = await descobrir(it.descobrir); console.log(`link mais recente: ${it.url}`); }
     const r = await fetch(it.url, { headers: { "user-agent": "base-normativa-sst/1.0" }, redirect: "follow" });
     if (!r.ok) throw new Error("HTTP " + r.status);
     const buf = Buffer.from(await r.arrayBuffer());

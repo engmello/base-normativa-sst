@@ -1,3 +1,6 @@
 node_modules/
 monitor/relatorio.md
 .DS_Store
+# downloads brutos: só o registro (url, data e hash) vai para o repositório; o PDF usado fica em fontes/pdf/
+fontes/bruto/*
+!fontes/bruto/registro.json

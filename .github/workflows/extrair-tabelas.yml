@@ -19,25 +19,25 @@ jobs:
           node-version: 22
       - name: Baixar documentos oficiais
         run: node scripts/baixar.mjs
+      - name: Instalar pdftotext
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - name: Extrair tabelas
-        run: if [ -f scripts/extrair.mjs ]; then node scripts/extrair.mjs; else echo "extrator ainda não criado"; fi
+        run: node scripts/extrair.mjs
+      - name: Validar resultado
+        run: node scripts/validar.mjs
       - name: Abrir proposta de mudança se algo mudou
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "extrator-base-normativa"
           git config user.email "actions@users.noreply.github.com"
+          abertos=$(gh pr list --state open --search "Extração das tabelas oficiais in:title" --json number -q length)
+          if [ "$abertos" != "0" ]; then echo "Já existe proposta de extração aberta; revise-a antes de gerar outra."; exit 0; fi
           ramo="extracao/$(date +%Y-%m-%d-%H%M)"
           git checkout -b "$ramo"
-          git add fontes/bruto tabelas manifesto.json
-          if git diff --cached --quiet; then echo "Nada mudou nas fontes nem nas tabelas."; exit 0; fi
+          git add fontes/bruto/registro.json fontes/pdf tabelas manifesto.json
+          if git diff --cached --quiet -- tabelas manifesto.json; then echo "As tabelas não mudaram."; exit 0; fi
           git commit -m "Extração automática das fontes oficiais em $(date +%Y-%m-%d)"
           git push -u origin "$ramo"
-          corpo="Extração automática a partir dos documentos oficiais baixados em \`fontes/bruto/\` (veja \`fontes/bruto/registro.json\` com URL, data e hash).
-
-          **Antes de aprovar:**
-          - [ ] Conferir as tabelas extraídas com o documento oficial
-          - [ ] Conferir se notas técnicas posteriores alteram algum código
-          - [ ] Preencher versão, vigência e conferido por/em no manifesto
-          - [ ] Atualizar o CHANGELOG"
-          gh pr create --title "Extração das tabelas oficiais – $(date +%Y-%m-%d)" --body "$corpo" --base main --head "$ramo" || echo "Não foi possível abrir o PR automaticamente; o ramo $ramo está publicado."
+          { echo "Extração automática dos documentos oficiais (URL, data e hash em \`fontes/bruto/registro.json\`)."; echo; cat fontes/bruto/resumo.md; echo; echo "**Antes de aprovar:**"; echo "- [ ] Conferir as tabelas extraídas com o PDF oficial guardado em \`fontes/pdf/\`"; echo "- [ ] Preencher \`conferido.por\` e \`conferido.em\` no manifesto e mudar o status para \`conferido\`"; echo "- [ ] Atualizar o CHANGELOG"; } > /tmp/corpo.md
+          gh pr create --title "Extração das tabelas oficiais – $(date +%Y-%m-%d)" --body-file /tmp/corpo.md --base main --head "$ramo" || echo "Não foi possível abrir o PR automaticamente; o ramo $ramo está publicado."

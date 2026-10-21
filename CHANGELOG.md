@@ -1,5 +1,8 @@
 # Histórico da base normativa
 
+## 2026-10-20 – extração automática
+- Novo robô de extração: descobre a nota técnica mais recente do eSocial, baixa o pacote, extrai as Tabelas 24 e 27 do Anexo I e abre uma proposta de mudança para revisão.
+
 ## 2026-10-20 – estrutura inicial
 - Criados o manifesto, a validação, a geração do `dist/` e o monitoramento semanal das fontes oficiais.
 - Tabela 24 e Tabela 27 do eSocial: estrutura criada, **aguardando o PDF oficial**.
