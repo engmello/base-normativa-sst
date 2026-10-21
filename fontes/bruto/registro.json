@@ -1,0 +1,26 @@
+[
+ {
+  "id": "esocial-tabelas-s13",
+  "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-cons-ate-nt-04-2025-rev-26-08-2025/index.html/tabelas.html",
+  "arquivo": "fontes/bruto/esocial-tabelas-s13.html",
+  "bytes": 445221,
+  "sha256": "bad804ec39359a917254b5dd2a0fe72f00b7780fd6ed10293d35b9ab146ed66f",
+  "baixado": "2026-10-21T00:53:17.337Z"
+ },
+ {
+  "id": "esocial-tabelas-do-esocial",
+  "url": "https://www.gov.br/esocial/pt-br/tabelas-do-esocial",
+  "arquivo": "fontes/bruto/esocial-tabelas-do-esocial.html",
+  "bytes": 78620,
+  "sha256": "7bf657a87deec4963af360af94a609940a941ebf9c7d7fc84d6eeaff1e9e40ad",
+  "baixado": "2026-10-21T00:53:17.514Z"
+ },
+ {
+  "id": "esocial-nt-07-2026",
+  "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-tecnica-s-1-3-07-2026-rev-20-10-2026-pdf.zip",
+  "arquivo": "fontes/bruto/esocial-nt-07-2026.zip",
+  "bytes": 5243551,
+  "sha256": "3f180312af0ddba089cbfafb18cdb0073736ae6c09cb08471fbced762fe43da6",
+  "baixado": "2026-10-21T00:53:25.172Z"
+ }
+]
