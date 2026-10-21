@@ -1,1 +1,93 @@
-codigo,descricao
+codigo,descricao,grupo,subgrupo
+01.01.001,Arsênio e seus compostos,Químicos,Arsênio e seus compostos
+01.02.001,Asbestos (ou amianto),Químicos,Asbestos
+01.03.001,"Benzeno e seus compostos tóxicos (exceto os abaixo especificados, que constam expressamente no Anexo IV do Decreto 3.048/1999)",Químicos,Benzeno e seus compostos tóxicos
+01.03.002,Estireno (vinilbenzeno),Químicos,Benzeno e seus compostos tóxicos
+01.04.001,Berílio e seus compostos tóxicos,Químicos,Berílio e seus compostos tóxicos
+01.05.001,Bromo e seus compostos tóxicos,Químicos,Bromo e seus compostos tóxicos
+01.06.001,Cádmio e seus compostos tóxicos,Químicos,Cádmio e seus compostos tóxicos
+01.07.001,Carvão mineral e seus derivados,Químicos,Carvão mineral e seus derivados
+01.08.001,Chumbo e seus compostos tóxicos,Químicos,Chumbo e seus compostos tóxicos
+01.09.001,"Cloro e seus compostos tóxicos (exceto os abaixo especificados, que constam expressamente no Anexo IV do Decreto 3.048/1999)",Químicos,Cloro e seus compostos tóxicos
+01.09.002,"Metileno-ortocloroanilina, MOCA® (4,4'-metileno-bis-(2-cloroanilina), MBOCA®)",Químicos,Cloro e seus compostos tóxicos
+01.09.003,"Bis (cloro metil) éter, clorometileter, (éter bis (clorometílico) ou éter metílico de clorometila), bisclorometil",Químicos,Cloro e seus compostos tóxicos
+01.09.004,Biscloroetileter (éter dicloroetílico),Químicos,Cloro e seus compostos tóxicos
+01.09.005,Clorambucil (cloroambucil),Químicos,Cloro e seus compostos tóxicos
+01.09.006,Cloropreno,Químicos,Cloro e seus compostos tóxicos
+01.10.001,Cromo e seus compostos tóxicos,Químicos,Cromo e seus compostos tóxicos
+01.11.001,Dissulfeto de carbono,Químicos,Dissulfeto de carbono
+01.12.001,Fósforo e seus compostos tóxicos,Químicos,Fósforo e seus compostos tóxicos
+01.13.001,Iodo,Químicos,Iodo
+01.14.001,Manganês e seus compostos,Químicos,Manganês e seus compostos
+01.15.001,Mercúrio e seus compostos,Químicos,Mercúrio e seus compostos
+01.16.001,Níquel e seus compostos tóxicos,Químicos,Níquel e seus compostos tóxicos
+01.17.001,"Petróleo, xisto betuminoso, gás natural e seus derivados",Químicos,"Petróleo, xisto betuminoso, gás natural e seus derivados"
+01.18.001,Sílica livre,Químicos,Sílica livre
+01.19.001,Butadieno-estireno,Químicos,Outras substâncias químicas
+01.19.002,Acrilonitrila,Químicos,Outras substâncias químicas
+01.19.003,1-3-butadieno,Químicos,Outras substâncias químicas
+01.19.004,Mercaptanos (tióis),Químicos,Outras substâncias químicas
+01.19.005,n-hexano,Químicos,Outras substâncias químicas
+01.19.006,Diisocianato de tolueno (TDI),Químicos,Outras substâncias químicas
+01.19.007,Aminas aromáticas,Químicos,Outras substâncias químicas
+01.19.008,Aminobifenila (4-aminodifenil),Químicos,Outras substâncias químicas
+01.19.009,Auramina,Químicos,Outras substâncias químicas
+01.19.010,Azatioprina,Químicos,Outras substâncias químicas
+01.19.011,1-4-butanodiol,Químicos,Outras substâncias químicas
+01.19.012,Dimetanosulfonato (MIRELAN),Químicos,Outras substâncias químicas
+01.19.013,Ciclofosfamida,Químicos,Outras substâncias químicas
+01.19.014,Dietiletil-bestrol,Químicos,Outras substâncias químicas
+01.19.015,Acronitrila,Químicos,Outras substâncias químicas
+01.19.016,Nitronaftilamina,Químicos,Outras substâncias químicas
+01.19.017,4-dimetil-aminoazobenzeno,Químicos,Outras substâncias químicas
+01.19.018,Benzopireno,Químicos,Outras substâncias químicas
+01.19.019,Beta-pbiscloromeropiolactona (beta-propiolactona),Químicos,Outras substâncias químicas
+01.19.021,Dianizidina,Químicos,Outras substâncias químicas
+01.19.022,Dietilsulfato,Químicos,Outras substâncias químicas
+01.19.023,Dimetilsulfato,Químicos,Outras substâncias químicas
+01.19.024,Etilenoamina,Químicos,Outras substâncias químicas
+01.19.025,Etilenotiureia,Químicos,Outras substâncias químicas
+01.19.026,Fenacetina,Químicos,Outras substâncias químicas
+01.19.027,Iodeto de metila,Químicos,Outras substâncias químicas
+01.19.028,Etilnitrosureia,Químicos,Outras substâncias químicas
+01.19.029,Nitrosamina,Químicos,Outras substâncias químicas
+01.19.030,Ortotoluidina,Químicos,Outras substâncias químicas
+01.19.031,Oximetalona (oxime-talona),Químicos,Outras substâncias químicas
+01.19.032,Procarbazina,Químicos,Outras substâncias químicas
+01.19.033,Propanosultona,Químicos,Outras substâncias químicas
+01.19.034,Óxido de etileno,Químicos,Outras substâncias químicas
+01.19.035,Estilbenzeno (etilbenzeno),Químicos,Outras substâncias químicas
+01.19.036,Creosoto,Químicos,Outras substâncias químicas
+01.19.038,Benzidina,Químicos,Outras substâncias químicas
+01.19.039,Betanaftilamina,Químicos,Outras substâncias químicas
+01.19.040,"1-cloro-2,4-nitrodifenil",Químicos,Outras substâncias químicas
+01.19.041,3-poxipro-pano,Químicos,Outras substâncias químicas
+02.01.001,Ruído,Físicos,Ruído
+02.01.002,Vibrações localizadas (mão-braço),Físicos,Vibrações
+02.01.003,Vibração de corpo inteiro (aceleração resultante de exposição normalizada - aren),Físicos,Vibrações
+02.01.004,Vibração de corpo inteiro (Valor da Dose de Vibração Resultante - VDVR),Físicos,Vibrações
+02.01.005,Trabalhos com perfuratrizes e marteletes pneumáticos,Físicos,Vibrações
+02.01.006,Radiações ionizantes,Físicos,Radiações ionizantes
+02.01.007,Extração e beneficiamento de minerais radioativos,Físicos,Radiações ionizantes
+02.01.008,Atividades em minerações com exposição ao radônio,Físicos,Radiações ionizantes
+02.01.009,"Realização de manutenção e supervisão em unidades de extração, tratamento e beneficiamento de minerais radioativos com exposição às radiações ionizantes",Físicos,Radiações ionizantes
+02.01.010,Operações com reatores nucleares ou com fontes radioativas,Físicos,Radiações ionizantes
+02.01.011,"Trabalhos realizados com exposição aos raios Alfa, Beta, Gama e X, aos nêutrons e às substâncias radioativas para fins industriais, terapêuticos e diagnósticos",Físicos,Radiações ionizantes
+02.01.012,Fabricação e manipulação de produtos radioativos,Físicos,Radiações ionizantes
+02.01.013,Pesquisas e estudos com radiações ionizantes em laboratórios,Físicos,Radiações ionizantes
+02.01.014,"Trabalhos com exposição ao calor nos termos da NR-15, da Portaria 3.214/1978",Físicos,Temperaturas anormais
+02.01.015,Pressão atmosférica anormal,Físicos,Pressão atmosférica anormal
+02.01.016,Trabalhos em caixões ou câmaras hiperbáricas,Físicos,Pressão atmosférica anormal
+02.01.017,Trabalhos em tubulões ou túneis sob ar comprimido,Físicos,Pressão atmosférica anormal
+02.01.018,Operações de mergulho com o uso de escafandros ou outros equipamentos,Físicos,Pressão atmosférica anormal
+03.01.001,Trabalhos em estabelecimentos de saúde com contato com pacientes portadores de doenças infectocontagiosas ou com manuseio de materiais contaminados,Biológicos,
+03.01.002,"Trabalhos com animais infectados para tratamento ou para o preparo de soro, vacinas e outros produtos",Biológicos,
+03.01.003,"Trabalhos em laboratórios de autópsia, de anatomia e anátomo-histologia",Biológicos,
+03.01.004,Trabalho de exumação de corpos e manipulação de resíduos de animais deteriorados,Biológicos,
+03.01.005,"Trabalhos em galerias, fossas e tranques de esgoto",Biológicos,
+03.01.006,Esvaziamento de biodigestores,Biológicos,
+03.01.007,Coleta e industrialização do lixo,Biológicos,
+04.01.001,Mineração subterrânea cujas atividades sejam exercidas afastadas das frentes de produção,"Associação de agentes nocivos físicos, químicos e biológicos",
+04.01.002,Trabalhos em atividades permanentes no subsolo de minerações subterrâneas em frente de produção,"Associação de agentes nocivos físicos, químicos e biológicos",
+05.01.001,Agentes nocivos não constantes no Anexo IV do Decreto 3.048/1999 e incluídos por força de decisão judicial ou administrativa,Outros agentes nocivos,
+09.01.001,Ausência de agente nocivo ou de atividades previstas no Anexo IV do Decreto 3.048/1999,Ausência de agentes nocivos ou atividades especiais,
