@@ -1,0 +1,32 @@
+name: Testar permissão para abrir pull request
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Abrir e fechar uma proposta de teste
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "teste-permissao"
+          git config user.email "actions@users.noreply.github.com"
+          ramo="teste-permissao/${{ github.run_id }}"
+          git checkout -b "$ramo"
+          git commit --allow-empty -m "Teste de permissão (será descartado)"
+          git push -u origin "$ramo"
+          if url=$(gh pr create --title "[teste] permissão do robô" --body "Teste automático; será fechado em seguida." --base main --head "$ramo" 2>&1); then
+            echo "::notice::OK: o robô conseguiu abrir a proposta ($url)."
+            gh pr close "$url" --delete-branch --comment "Teste concluído."
+          else
+            echo "::error::O robô NÃO conseguiu abrir a proposta: $url"
+            git push origin --delete "$ramo"
+            exit 1
+          fi
