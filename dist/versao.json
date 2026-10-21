@@ -1,18 +1,18 @@
 {
- "versao": "2026.10.21-9c5de0",
- "hash": "9c5de0318c94",
- "gerado": "2026-10-21T01:15:24.566Z",
+ "versao": "2026.10.21-ca1d84",
+ "hash": "ca1d84498aec",
+ "gerado": "2026-10-21T13:35:29.417Z",
  "itens": {
   "esocial-tabela-24": {
    "versao": "S-1.3 cons. até NT 07.2026 rev. 20.10.2026",
-   "status": "rascunho",
-   "hash": "934f4f492a13",
+   "status": "conferido",
+   "hash": "45b886e9f0ba",
    "titulo": "eSocial – Tabela 24: Agentes nocivos e atividades (aposentadoria especial)"
   },
   "esocial-tabela-27": {
    "versao": "S-1.3 cons. até NT 07.2026 rev. 20.10.2026",
-   "status": "rascunho",
-   "hash": "912afac90eec",
+   "status": "conferido",
+   "hash": "1a6db414a102",
    "titulo": "eSocial – Tabela 27: Procedimentos diagnósticos"
   },
   "pgr-matriz": {
