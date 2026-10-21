@@ -1,7 +1,7 @@
 {
- "versao": "2026.10.21-ca1d84",
- "hash": "ca1d84498aec",
- "gerado": "2026-10-21T13:35:29.417Z",
+ "versao": "2026.10.21-87f4be",
+ "hash": "87f4bef77792",
+ "gerado": "2026-10-21T21:06:04.914Z",
  "itens": {
   "esocial-tabela-24": {
    "versao": "S-1.3 cons. até NT 07.2026 rev. 20.10.2026",
@@ -50,6 +50,18 @@
    "status": "rascunho",
    "hash": "1b9a6a1f8479",
    "titulo": "NR-07 – Periodicidades e prazos"
+  },
+  "catalogo-perigos": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "4c741bb73df7",
+   "titulo": "Catálogo inicial de perigos (código T24, LT, efeito, danos e medidas)"
+  },
+  "nr15-nr16-anexos": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "767b67ace386",
+   "titulo": "NR-15 e NR-16 – Anexos (insalubridade e periculosidade)"
   }
  }
 }
