@@ -7,6 +7,7 @@ import { execFileSync } from "node:child_process";
 import { lerCSV } from "./csv.mjs";
 
 const raiz = new URL("..", import.meta.url).pathname;
+const aviso = (m) => console.log((process.env.GITHUB_ACTIONS ? "::notice::" : "") + m);
 const bruto = raiz + "fontes/bruto/";
 
 function acharPDFs(dir) {
@@ -16,7 +17,7 @@ function acharPDFs(dir) {
   });
 }
 const pdfs = existsSync(bruto) ? acharPDFs(bruto) : [];
-if (!pdfs.length) { console.log("Nenhum PDF do Anexo I - Tabelas em fontes/bruto/."); process.exit(0); }
+if (!pdfs.length) { aviso("Nenhum PDF do Anexo I - Tabelas em fontes/bruto/."); process.exit(0); }
 const pdf = pdfs.sort().pop();
 const nomePdf = pdf.split("/").pop();
 const versao = (nomePdf.match(/\(([^)]+)\)/) || [, ""])[1];          // ex.: cons. até NT 07.2026 rev. 20.10.2026
@@ -94,7 +95,7 @@ for (const tb of tabelas) {
     resumo += lista("Removidos", sairam, (r) => `- \`${r.codigo}\` ${r.descricao}`);
     resumo += lista("Alterados", mudaram, (r) => `- \`${r.codigo}\`: “${ma[r.codigo].descricao}” → “${r.descricao}”`);
   }
-  console.log(`Tabela ${tb.num}: ${novos.length} códigos (${entraram.length} novos, ${sairam.length} removidos, ${mudaram.length} alterados)`);
+  aviso(`Tabela ${tb.num}: ${novos.length} códigos (${entraram.length} novos, ${sairam.length} removidos, ${mudaram.length} alterados)`);
 }
 writeFileSync(raiz + "manifesto.json", JSON.stringify(man, null, 2) + "\n");
 writeFileSync(bruto + "resumo.md", resumo);

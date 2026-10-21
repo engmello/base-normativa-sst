@@ -32,12 +32,12 @@ jobs:
           git config user.name "extrator-base-normativa"
           git config user.email "actions@users.noreply.github.com"
           abertos=$(gh pr list --state open --search "Extração das tabelas oficiais in:title" --json number -q length)
-          if [ "$abertos" != "0" ]; then echo "Já existe proposta de extração aberta; revise-a antes de gerar outra."; exit 0; fi
+          if [ "$abertos" != "0" ]; then echo "::notice::Já existe proposta de extração aberta; revise-a antes de gerar outra."; exit 0; fi
           ramo="extracao/$(date +%Y-%m-%d-%H%M)"
           git checkout -b "$ramo"
           git add fontes/bruto/registro.json fontes/pdf tabelas manifesto.json
-          if git diff --cached --quiet -- tabelas manifesto.json; then echo "As tabelas não mudaram."; exit 0; fi
+          if git diff --cached --quiet -- tabelas manifesto.json; then echo "::notice::As tabelas não mudaram."; exit 0; fi
           git commit -m "Extração automática das fontes oficiais em $(date +%Y-%m-%d)"
           git push -u origin "$ramo"
           { echo "Extração automática dos documentos oficiais (URL, data e hash em \`fontes/bruto/registro.json\`)."; echo; cat fontes/bruto/resumo.md; echo; echo "**Antes de aprovar:**"; echo "- [ ] Conferir as tabelas extraídas com o PDF oficial guardado em \`fontes/pdf/\`"; echo "- [ ] Preencher \`conferido.por\` e \`conferido.em\` no manifesto e mudar o status para \`conferido\`"; echo "- [ ] Atualizar o CHANGELOG"; } > /tmp/corpo.md
-          gh pr create --title "Extração das tabelas oficiais – $(date +%Y-%m-%d)" --body-file /tmp/corpo.md --base main --head "$ramo" || echo "Não foi possível abrir o PR automaticamente; o ramo $ramo está publicado."
+          gh pr create --title "Extração das tabelas oficiais – $(date +%Y-%m-%d)" --body-file /tmp/corpo.md --base main --head "$ramo" || echo "::warning::Não foi possível abrir o PR automaticamente; o ramo $ramo está publicado."
