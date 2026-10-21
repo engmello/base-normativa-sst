@@ -256,6 +256,66 @@
       "monitor": [
         "mte-nrs"
       ]
+    },
+    {
+      "id": "catalogo-perigos",
+      "titulo": "Catálogo inicial de perigos (código T24, LT, efeito, danos e medidas)",
+      "tipo": "regra",
+      "arquivo": "regras/catalogo-perigos.json",
+      "fonte": {
+        "orgao": "MTE / eSocial / Fundacentro",
+        "ato": "NR-09 (Anexo 1); NR-15 (Anexos 1, 2, 8 e 11); NHO 01; eSocial – Tabela 24",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-21",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "Catálogo de riscos",
+        "Fatores de risco",
+        "S-2240"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
+      "id": "nr15-nr16-anexos",
+      "titulo": "NR-15 e NR-16 – Anexos (insalubridade e periculosidade)",
+      "tipo": "regra",
+      "arquivo": "regras/nr15-nr16-anexos.json",
+      "fonte": {
+        "orgao": "MTE / eSocial / Fundacentro",
+        "ato": "NR-15 – Atividades e operações insalubres; NR-16 – Atividades e operações perigosas",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-21",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "GHE",
+        "LTCAT",
+        "Fatores de risco"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
     }
   ]
 }

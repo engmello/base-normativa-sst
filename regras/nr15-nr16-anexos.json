@@ -1,0 +1,27 @@
+{
+  "descricao": "Anexos da NR-15 (atividades e operações insalubres) e da NR-16 (atividades e operações perigosas) usados para indicar insalubridade e periculosidade no GHE. O Anexo 4 da NR-15 (iluminação) foi revogado e não consta.",
+  "nr15": [
+    "Anexo 1 – Ruído contínuo ou intermitente",
+    "Anexo 2 – Ruído de impacto",
+    "Anexo 3 – Calor",
+    "Anexo 5 – Radiações ionizantes",
+    "Anexo 6 – Condições hiperbáricas",
+    "Anexo 7 – Radiações não ionizantes",
+    "Anexo 8 – Vibrações",
+    "Anexo 9 – Frio",
+    "Anexo 10 – Umidade",
+    "Anexo 11 – Agentes químicos (limite de tolerância)",
+    "Anexo 12 – Poeiras minerais",
+    "Anexo 13 – Agentes químicos (avaliação qualitativa)",
+    "Anexo 13-A – Benzeno",
+    "Anexo 14 – Agentes biológicos"
+  ],
+  "nr16": [
+    "Anexo 1 – Explosivos",
+    "Anexo 2 – Inflamáveis",
+    "Anexo 3 – Segurança pessoal ou patrimonial (roubos e violência física)",
+    "Anexo 4 – Energia elétrica",
+    "Anexo 5 – Motocicleta",
+    "Radiações ionizantes ou substâncias radioativas"
+  ]
+}
