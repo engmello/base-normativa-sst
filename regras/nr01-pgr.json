@@ -1,0 +1,12 @@
+{
+  "descricao": "Parâmetros do PGR (NR-01, GRO): periodicidade de revisão do inventário de riscos e dimensões dos fatores de riscos psicossociais relacionados ao trabalho incluídos pela Portaria MTE nº 1.419/2024. Transcrito do protótipo Ronda SST — conferir com a NR-01 vigente antes de marcar como conferido.",
+  "revisaoMeses": 24,
+  "revisaoNota": "NR-01, item 1.5.4.4.6: a avaliação de riscos deve ser revista a cada dois anos, ou antes, quando houver mudanças (tecnologia, processos, acidentes, PCMSO, solicitação dos trabalhadores).",
+  "psicossociais": {
+    "dimensoes": [
+      { "dimensao": "Organização do trabalho", "perigo": "Metas, ritmo intenso e pressão por prazos", "danos": "Estresse, ansiedade, depressão, esgotamento profissional" },
+      { "dimensao": "Relações interpessoais", "perigo": "Conflitos interpessoais e risco de assédio", "danos": "Estresse, ansiedade, depressão, esgotamento profissional" },
+      { "dimensao": "Condições do ambiente e contexto", "perigo": "Insegurança, falta de reconhecimento e comunicação deficiente", "danos": "Estresse, ansiedade, depressão, esgotamento profissional" }
+    ]
+  }
+}

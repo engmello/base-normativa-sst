@@ -1,5 +1,8 @@
 # Histórico da base normativa
 
+## 2026-10-22 – parâmetros do PGR (rascunho)
+- Novo item `nr01-pgr`: revisão do inventário a cada 24 meses (NR-01, 1.5.4.4.6) e as 3 dimensões dos fatores de riscos psicossociais (Portaria MTE 1.419/2024) com perigo e danos padrão. Status: **rascunho**.
+
 ## 2026-10-21 – catálogo de perigos e anexos NR-15/NR-16 (rascunho)
 - Novo item `catalogo-perigos`: 21 perigos iniciais com código da Tabela 24, avaliação, limite de tolerância, trajetória, efeito sugerido, danos, medidas e orientação de código (ex.: fumos de solda → informar o metal). Radiação não ionizante e poeira incômoda marcadas como **não** agente nocivo da Tabela 24. Transcrito do Ronda SST — conferir com NR-09, NR-15 e NHO 01.
 - Novo item `nr15-nr16-anexos`: anexos da NR-15 (insalubridade) e da NR-16 (periculosidade) para indicação no GHE.
