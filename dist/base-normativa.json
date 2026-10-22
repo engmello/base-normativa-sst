@@ -1,8 +1,8 @@
 {
  "nome": "Base normativa SST",
- "versao": "2026.10.21-87f4be",
- "hash": "87f4bef77792",
- "gerado": "2026-10-21T21:06:04.914Z",
+ "versao": "2026.10.22-2c6ea4",
+ "hash": "2c6ea40ba844",
+ "gerado": "2026-10-22T12:25:21.585Z",
  "itens": [
   {
    "id": "esocial-tabela-24",
@@ -7354,6 +7354,59 @@
      "Anexo 5 – Motocicleta",
      "Radiações ionizantes ou substâncias radioativas"
     ]
+   }
+  },
+  {
+   "id": "nr01-pgr",
+   "titulo": "NR-01 – PGR: revisão do inventário e dimensões psicossociais",
+   "tipo": "regra",
+   "arquivo": "regras/nr01-pgr.json",
+   "fonte": {
+    "orgao": "MTE",
+    "ato": "NR-01 (Portaria SEPRT 6.730/2020; Portaria MTE 1.419/2024)",
+    "url": "",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-22",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "PGR",
+    "Inventário de riscos",
+    "Riscos psicossociais",
+    "Conferência técnica"
+   ],
+   "hash": "1f5ec6e943f6",
+   "dados": {
+    "descricao": "Parâmetros do PGR (NR-01, GRO): periodicidade de revisão do inventário de riscos e dimensões dos fatores de riscos psicossociais relacionados ao trabalho incluídos pela Portaria MTE nº 1.419/2024. Transcrito do protótipo Ronda SST — conferir com a NR-01 vigente antes de marcar como conferido.",
+    "revisaoMeses": 24,
+    "revisaoNota": "NR-01, item 1.5.4.4.6: a avaliação de riscos deve ser revista a cada dois anos, ou antes, quando houver mudanças (tecnologia, processos, acidentes, PCMSO, solicitação dos trabalhadores).",
+    "psicossociais": {
+     "dimensoes": [
+      {
+       "dimensao": "Organização do trabalho",
+       "perigo": "Metas, ritmo intenso e pressão por prazos",
+       "danos": "Estresse, ansiedade, depressão, esgotamento profissional"
+      },
+      {
+       "dimensao": "Relações interpessoais",
+       "perigo": "Conflitos interpessoais e risco de assédio",
+       "danos": "Estresse, ansiedade, depressão, esgotamento profissional"
+      },
+      {
+       "dimensao": "Condições do ambiente e contexto",
+       "perigo": "Insegurança, falta de reconhecimento e comunicação deficiente",
+       "danos": "Estresse, ansiedade, depressão, esgotamento profissional"
+      }
+     ]
+    }
    }
   }
  ]
