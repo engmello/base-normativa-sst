@@ -316,6 +316,37 @@
       "monitor": [
         "mte-nrs"
       ]
+    },
+    {
+      "id": "nr01-pgr",
+      "titulo": "NR-01 – PGR: revisão do inventário e dimensões psicossociais",
+      "tipo": "regra",
+      "arquivo": "regras/nr01-pgr.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-01 (Portaria SEPRT 6.730/2020; Portaria MTE 1.419/2024)",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-22",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "Inventário de riscos",
+        "Riscos psicossociais",
+        "Conferência técnica"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
     }
   ]
 }
