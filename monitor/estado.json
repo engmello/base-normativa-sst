@@ -1,7 +1,7 @@
 {
  "esocial-documentacao": {
   "hashDocs": "e5364a162f6789f1",
-  "hashTexto": "e50597ccb781c5f4",
+  "hashTexto": "f824f4c83a22ddb7",
   "docs": [
    "https://frontend.esocial.gov.br/adm/",
    "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-v-s-1-3-nt-07-2026-rev-24-09-2026",
@@ -41,8 +41,8 @@
    "https://www.gov.br/esocial/pt-br/resolveuid/fed0374a5c444c1d8693ce8f90b1753a",
    "https://www.gov.br/esocial/pt-br/tabelas-do-esocial"
   ],
-  "verificado": "2026-10-20T23:50:01.490Z",
-  "desde": "2026-10-20T23:50:01.490Z"
+  "verificado": "2026-10-26T17:25:48.534Z",
+  "desde": "2026-10-26T17:25:48.534Z"
  },
  "esocial-tabelas-s13": {
   "hashDocs": "1d7cf4b7ebd3de35",
@@ -52,7 +52,7 @@
    "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-cons-ate-nt-04-2025-rev-26-08-2025/index.html/regras.html",
    "https://www.gov.br/esocial/pt-br/documentacao-tecnica/leiautes-esocial-versao-s-1-3-cons-ate-nt-04-2025-rev-26-08-2025/index.html/tabelas.html"
   ],
-  "verificado": "2026-10-20T23:50:01.490Z",
+  "verificado": "2026-10-26T17:25:48.534Z",
   "desde": "2026-10-20T23:50:01.490Z"
  },
  "mte-nrs": {
@@ -103,7 +103,7 @@
    "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-de-designacao-de-fiscais-de-ted-act-protocolos-de-intencoes-e-instrumentos-congeneres",
    "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/legislacao/portarias-internas-2"
   ],
-  "verificado": "2026-10-20T23:50:01.490Z",
+  "verificado": "2026-10-26T17:25:48.534Z",
   "desde": "2026-10-20T23:50:01.490Z"
  }
 }
