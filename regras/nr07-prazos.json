@@ -3,5 +3,8 @@
   "retornoAoTrabalho": { "ausenciaMinimaDias": 30, "motivo": "doença ou acidente, de natureza ocupacional ou não" },
   "demissional": { "prazoAteDiasAposTermino": 10, "dispensaSeExameClinicoHaMenosDe": { "grauRisco1e2_dias": 135, "grauRisco3e4_dias": 90 } },
   "prontuario": { "guardaAnosAposDesligamento": 20 },
-  "audiometria": { "momentos": ["admissional", "6 meses após a admissão", "anual", "demissional"] }
+  "audiometria": { "momentos": ["admissional", "anual", "demissional"], "demissionalAceitaAteDiasAntes": 120 },
+  "indicadoresBiologicos": { "periodicidadeMeses": 6, "toleranciaDias": 45, "sazonal_periodicidadeMeses": 12, "naoObrigatorioEm": ["admissional", "retorno ao trabalho", "mudança de risco", "demissional"] },
+  "espirometriaPoeirasMinerais": { "momentos": ["admissional", "a cada 2 anos"] },
+  "examesComplementaresAdmissional": { "aceitaAteDiasAntes": 90 }
 }

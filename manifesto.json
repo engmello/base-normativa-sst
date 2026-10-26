@@ -204,13 +204,13 @@
       "arquivo": "regras/exames-por-agente.json",
       "fonte": {
         "orgao": "MTE",
-        "ato": "NR-07, Anexos I e II; NR-35; NR-10; CLT art. 168 (toxicológico)",
-        "url": "",
-        "pdf": ""
+        "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), Anexos I, II e III; NR-35; NR-10; CLT art. 168, §6º",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+        "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
       },
-      "versao": "2026.1",
+      "versao": "2026.2",
       "vigencia": {
-        "inicio": "2026-10-20",
+        "inicio": "2026-10-26",
         "fim": ""
       },
       "status": "rascunho",
@@ -234,13 +234,13 @@
       "arquivo": "regras/nr07-prazos.json",
       "fonte": {
         "orgao": "MTE",
-        "ato": "NR-07",
-        "url": "",
-        "pdf": ""
+        "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), itens 7.5.8 a 7.5.17, 7.6.1 e Anexo II",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+        "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
       },
-      "versao": "2026.1",
+      "versao": "2026.2",
       "vigencia": {
-        "inicio": "2026-10-20",
+        "inicio": "2026-10-26",
         "fim": ""
       },
       "status": "rascunho",
