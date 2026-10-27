@@ -110,6 +110,36 @@
       ]
     },
     {
+      "id": "pgr-matrizes",
+      "titulo": "PGR – Matrizes de risco alternativas (escolha por PGR)",
+      "tipo": "parametro",
+      "arquivo": "parametros/pgr-matrizes.json",
+      "fonte": {
+        "orgao": "Metodologias de avaliação de risco",
+        "ato": "NR-01, item 1.5.4.4.2 – a NR exige critério documentado, não fixa a matriz",
+        "url": "",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-27",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "Inventário de riscos",
+        "Plano de ação"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
       "id": "ruido-criterios",
       "titulo": "Ruído – critérios NHO 01 e NR-15 Anexo 1",
       "tipo": "parametro",

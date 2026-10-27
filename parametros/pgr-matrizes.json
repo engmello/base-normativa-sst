@@ -1,0 +1,45 @@
+{
+  "descricao": "Matrizes de risco alternativas para o PGR. A NR-01 (item 1.5.4.4.2) exige nível de risco pela combinação da severidade com a probabilidade, com critério documentado, mas não fixa a matriz. A matriz padrão (efeito × perfil, 5×5) está em pgr-matriz; aqui ficam as demais que uma conta pode escolher, por exemplo para manter a metodologia de um PGR anterior numa revisão.",
+  "matrizes": [
+    {
+      "id": "efeito-frequencia-4x4",
+      "nome": "Efeito × frequência da exposição (4×4)",
+      "tipo": "tabela",
+      "descricao": "Nível de risco lido numa tabela de efeito (severidade) por frequência da exposição, com cinco classes. É a matriz dos cartões de risco do ARMS antes da fusão com o Bloco 5.",
+      "eixos": { "linhas": "Efeito (severidade)", "colunas": "Frequência da exposição" },
+      "efeitos": [
+        { "valor": 1, "nome": "Leve", "descricao": "Lesão ou desconforto sem afastamento; efeito reversível" },
+        { "valor": 2, "nome": "Moderado", "descricao": "Lesão com afastamento de até 15 dias; doença reversível" },
+        { "valor": 3, "nome": "Sério", "descricao": "Afastamento acima de 15 dias, incapacidade parcial ou doença crônica" },
+        { "valor": 4, "nome": "Severo", "descricao": "Morte, incapacidade permanente, doença irreversível ou vários trabalhadores atingidos" }
+      ],
+      "perfis": [
+        { "valor": 1, "nome": "Ocasional", "descricao": "Exposição eventual, fora da rotina" },
+        { "valor": 2, "nome": "Intermitente", "descricao": "Exposição em parte da jornada, não contínua" },
+        { "valor": 3, "nome": "Habitual", "descricao": "Exposição diária, em parte relevante da jornada" },
+        { "valor": 4, "nome": "Permanente", "descricao": "Exposição contínua durante toda a jornada" }
+      ],
+      "niveis": [
+        ["Irrelevante", "Baixo", "Baixo", "Médio"],
+        ["Baixo", "Baixo", "Médio", "Alto"],
+        ["Baixo", "Médio", "Alto", "Alto"],
+        ["Médio", "Alto", "Alto", "Crítico"]
+      ],
+      "classes": [
+        { "classe": "Irrelevante", "aceitabilidade": "Aceitável", "cor": "verde", "acao": "Sem ação adicional.", "prazoMeses": null },
+        { "classe": "Baixo", "aceitabilidade": "Aceitável", "cor": "verde", "acao": "Manter os controles e verificar em inspeção.", "prazoMeses": null },
+        { "classe": "Médio", "aceitabilidade": "Tolerável", "cor": "amarelo", "acao": "Tolerável com plano de ação: controles em até 90 dias.", "prazoMeses": 3 },
+        { "classe": "Alto", "aceitabilidade": "Inaceitável", "cor": "laranja", "acao": "Não aceitável: controles de engenharia ou administrativos em até 30 dias, com medida provisória imediata.", "prazoMeses": 1 },
+        { "classe": "Crítico", "aceitabilidade": "Inaceitável", "cor": "vermelho", "acao": "Paralisar a atividade até implantar os controles.", "prazoMeses": 0 }
+      ],
+      "casosDeTeste": [
+        { "caso": "Leve × ocasional", "efeito": 1, "perfil": 1, "classe": "Irrelevante" },
+        { "caso": "Moderado × habitual", "efeito": 2, "perfil": 3, "classe": "Médio" },
+        { "caso": "Sério × intermitente", "efeito": 3, "perfil": 2, "classe": "Médio" },
+        { "caso": "Severo × ocasional", "efeito": 4, "perfil": 1, "classe": "Médio" },
+        { "caso": "Severo × habitual", "efeito": 4, "perfil": 3, "classe": "Alto" },
+        { "caso": "Severo × permanente", "efeito": 4, "perfil": 4, "classe": "Crítico" }
+      ]
+    }
+  ]
+}

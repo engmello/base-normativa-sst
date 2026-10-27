@@ -62,6 +62,28 @@ try {
   }
 } catch (e) { erros.push("[pgr-matriz] " + e.message); }
 
+// matrizes alternativas: id único, tabela completa com classes conhecidas e casos de teste
+try {
+  const { matrizes } = JSON.parse(ler("parametros/pgr-matrizes.json"));
+  const idsMatriz = new Set([JSON.parse(ler("parametros/pgr-matriz.json")).id]);
+  for (const m of matrizes) {
+    const p = `[pgr-matrizes ${m.id}]`;
+    if (idsMatriz.has(m.id)) erros.push(`${p} id repetido`); idsMatriz.add(m.id);
+    if (m.tipo !== "tabela") { erros.push(`${p} tipo "${m.tipo}" não suportado (use "tabela")`); continue; }
+    const classes = new Set(m.classes.map((c) => c.classe));
+    if (m.niveis.length !== m.efeitos.length) erros.push(`${p} ${m.niveis.length} linhas para ${m.efeitos.length} efeitos`);
+    m.niveis.forEach((linha, i) => {
+      if (linha.length !== m.perfis.length) erros.push(`${p} linha ${i + 1} com ${linha.length} colunas para ${m.perfis.length} perfis`);
+      linha.forEach((c) => { if (!classes.has(c)) erros.push(`${p} classe "${c}" fora de classes`); });
+    });
+    for (const c of m.casosDeTeste || []) {
+      const i = m.efeitos.findIndex((e) => e.valor === c.efeito), j = m.perfis.findIndex((x) => x.valor === c.perfil);
+      const cl = i < 0 || j < 0 ? "(fora da escala)" : m.niveis[i][j];
+      if (cl !== c.classe) erros.push(`${p} caso "${c.caso}": deu ${cl}, esperado ${c.classe}`);
+    }
+  }
+} catch (e) { erros.push("[pgr-matrizes] " + e.message); }
+
 avisos.forEach((a) => console.log("aviso  " + a));
 erros.forEach((e) => console.log("ERRO   " + e));
 console.log(`\n${man.itens.length} itens · ${erros.length} erro(s) · ${avisos.length} aviso(s)`);
