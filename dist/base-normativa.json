@@ -1,8 +1,8 @@
 {
  "nome": "Base normativa SST",
- "versao": "2026.10.22-2c6ea4",
- "hash": "2c6ea40ba844",
- "gerado": "2026-10-22T12:25:21.585Z",
+ "versao": "2026.10.28-475c4c",
+ "hash": "475c4c7e8392",
+ "gerado": "2026-10-28T13:38:24.387Z",
  "itens": [
   {
    "id": "esocial-tabela-24",
@@ -6433,8 +6433,8 @@
    "arquivo": "parametros/pgr-matriz.json",
    "fonte": {
     "orgao": "Metodologia adotada pela consultoria",
-    "ato": "NR-01 (gerenciamento de riscos ocupacionais) – a NR exige critério documentado, não fixa a matriz",
-    "url": "",
+    "ato": "NR-01, itens 1.5.4.4.2 a 1.5.4.4.5 – a NR exige critério documentado (1.5.4.4.2.2), não fixa a matriz",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -6452,8 +6452,11 @@
     "Inventário de riscos",
     "Plano de ação"
    ],
-   "hash": "226abc6a36bf",
+   "hash": "835a6b3e68f3",
    "dados": {
+    "id": "efeito-perfil-5x5",
+    "nome": "Efeito × perfil de exposição (5×5)",
+    "tipo": "produto",
     "formula": "nivel = efeito × perfil",
     "efeitos": [
      {
@@ -6563,6 +6566,194 @@
    }
   },
   {
+   "id": "pgr-matrizes",
+   "titulo": "PGR – Matrizes de risco alternativas (escolha por PGR)",
+   "tipo": "parametro",
+   "arquivo": "parametros/pgr-matrizes.json",
+   "fonte": {
+    "orgao": "Metodologias de avaliação de risco",
+    "ato": "NR-01, itens 1.5.4.4.2 a 1.5.4.4.5 – a organização escolhe a ferramenta (1.5.4.4.2.1) e documenta os critérios (1.5.4.4.2.2)",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-27",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "PGR",
+    "Inventário de riscos",
+    "Plano de ação"
+   ],
+   "hash": "b7400b2f184c",
+   "dados": {
+    "descricao": "Matrizes de risco alternativas para o PGR. A NR-01 exige nível de risco pela combinação da severidade com a probabilidade (1.5.4.4.2), deixa a ferramenta à escolha da organização (1.5.4.4.2.1) e manda documentar as gradações, os níveis e os critérios de classificação e decisão (1.5.4.4.2.2); não fixa a matriz. A matriz padrão (efeito × perfil, 5×5) está em pgr-matriz; aqui ficam as demais que uma conta pode escolher, por exemplo para manter a metodologia de um PGR anterior numa revisão.",
+    "matrizes": [
+     {
+      "id": "efeito-frequencia-4x4",
+      "nome": "Efeito × frequência da exposição (4×4)",
+      "tipo": "tabela",
+      "descricao": "Nível de risco lido numa tabela de efeito (severidade) por frequência da exposição, com cinco classes. É a matriz dos cartões de risco do ARMS antes da fusão com o Bloco 5. A frequência faz o papel da probabilidade: ao escolhê-la, considere também o cumprimento das NR e a eficácia das medidas de prevenção já implantadas e, para agentes físicos, químicos e biológicos, a comparação com os valores de referência da NR-09 (NR-01, 1.5.4.4.5.1 a 1.5.4.4.5.4). Na severidade, quando houver mais de uma consequência possível, vale a de maior magnitude (1.5.4.4.4.1).",
+      "eixos": {
+       "linhas": "Efeito (severidade)",
+       "colunas": "Frequência da exposição"
+      },
+      "efeitos": [
+       {
+        "valor": 1,
+        "nome": "Leve",
+        "descricao": "Lesão ou desconforto sem afastamento; efeito reversível"
+       },
+       {
+        "valor": 2,
+        "nome": "Moderado",
+        "descricao": "Lesão com afastamento de até 15 dias; doença reversível"
+       },
+       {
+        "valor": 3,
+        "nome": "Sério",
+        "descricao": "Afastamento acima de 15 dias, incapacidade parcial ou doença crônica"
+       },
+       {
+        "valor": 4,
+        "nome": "Severo",
+        "descricao": "Morte, incapacidade permanente, doença irreversível ou vários trabalhadores atingidos"
+       }
+      ],
+      "perfis": [
+       {
+        "valor": 1,
+        "nome": "Ocasional",
+        "descricao": "Exposição eventual, fora da rotina"
+       },
+       {
+        "valor": 2,
+        "nome": "Intermitente",
+        "descricao": "Exposição em parte da jornada, não contínua"
+       },
+       {
+        "valor": 3,
+        "nome": "Habitual",
+        "descricao": "Exposição diária, em parte relevante da jornada"
+       },
+       {
+        "valor": 4,
+        "nome": "Permanente",
+        "descricao": "Exposição contínua durante toda a jornada"
+       }
+      ],
+      "niveis": [
+       [
+        "Irrelevante",
+        "Baixo",
+        "Baixo",
+        "Médio"
+       ],
+       [
+        "Baixo",
+        "Baixo",
+        "Médio",
+        "Alto"
+       ],
+       [
+        "Baixo",
+        "Médio",
+        "Alto",
+        "Alto"
+       ],
+       [
+        "Médio",
+        "Alto",
+        "Alto",
+        "Crítico"
+       ]
+      ],
+      "classes": [
+       {
+        "classe": "Irrelevante",
+        "aceitabilidade": "Aceitável",
+        "cor": "verde",
+        "acao": "Sem ação adicional.",
+        "prazoMeses": null
+       },
+       {
+        "classe": "Baixo",
+        "aceitabilidade": "Aceitável",
+        "cor": "verde",
+        "acao": "Manter os controles e verificar em inspeção.",
+        "prazoMeses": null
+       },
+       {
+        "classe": "Médio",
+        "aceitabilidade": "Tolerável",
+        "cor": "amarelo",
+        "acao": "Tolerável com plano de ação: controles em até 90 dias.",
+        "prazoMeses": 3
+       },
+       {
+        "classe": "Alto",
+        "aceitabilidade": "Inaceitável",
+        "cor": "laranja",
+        "acao": "Não aceitável: controles de engenharia ou administrativos em até 30 dias, com medida provisória imediata.",
+        "prazoMeses": 1
+       },
+       {
+        "classe": "Crítico",
+        "aceitabilidade": "Inaceitável",
+        "cor": "vermelho",
+        "acao": "Paralisar a atividade até implantar os controles.",
+        "prazoMeses": 0
+       }
+      ],
+      "casosDeTeste": [
+       {
+        "caso": "Leve × ocasional",
+        "efeito": 1,
+        "perfil": 1,
+        "classe": "Irrelevante"
+       },
+       {
+        "caso": "Moderado × habitual",
+        "efeito": 2,
+        "perfil": 3,
+        "classe": "Médio"
+       },
+       {
+        "caso": "Sério × intermitente",
+        "efeito": 3,
+        "perfil": 2,
+        "classe": "Médio"
+       },
+       {
+        "caso": "Severo × ocasional",
+        "efeito": 4,
+        "perfil": 1,
+        "classe": "Médio"
+       },
+       {
+        "caso": "Severo × habitual",
+        "efeito": 4,
+        "perfil": 3,
+        "classe": "Alto"
+       },
+       {
+        "caso": "Severo × permanente",
+        "efeito": 4,
+        "perfil": 4,
+        "classe": "Crítico"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
    "id": "ruido-criterios",
    "titulo": "Ruído – critérios NHO 01 e NR-15 Anexo 1",
    "tipo": "parametro",
@@ -6570,7 +6761,7 @@
    "fonte": {
     "orgao": "Fundacentro / MTE",
     "ato": "NHO 01 (Fundacentro); NR-15, Anexo 1; NR-09, Anexo 1",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -6589,7 +6780,7 @@
     "LTCAT",
     "Interpretação automática"
    ],
-   "hash": "b2aa47ec5771",
+   "hash": "0e3433b95d92",
    "dados": {
     "criterios": {
      "nho01": {
@@ -6630,7 +6821,7 @@
    "fonte": {
     "orgao": "MTE / Fundacentro",
     "ato": "NR-09, Anexo 3; NR-15, Anexo 3; NHO 06",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -6646,7 +6837,7 @@
    "usadoEm": [
     "Calculadora"
    ],
-   "hash": "33ac7efc38a6",
+   "hash": "fc4c0e5ddc54",
    "dados": {
     "ibutg": {
      "semCargaSolar": "0,7 · tbn + 0,3 · tg",
@@ -6671,7 +6862,7 @@
    "fonte": {
     "orgao": "MTE / Fundacentro",
     "ato": "NR-09, Anexo 1; NR-15, Anexo 8; NHO 09 e NHO 10",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -6688,7 +6879,7 @@
     "Catálogo de riscos",
     "Fatores de risco"
    ],
-   "hash": "9460f2ca1041",
+   "hash": "2ab56a11454d",
    "dados": {
     "vci": {
      "nome": "Vibração de corpo inteiro",
@@ -6722,13 +6913,13 @@
    "arquivo": "regras/exames-por-agente.json",
    "fonte": {
     "orgao": "MTE",
-    "ato": "NR-07, Anexos I e II; NR-35; NR-10; CLT art. 168 (toxicológico)",
-    "url": "",
-    "pdf": ""
+    "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), Anexos I, II e III; NR-35; NR-10; CLT art. 168, §6º",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+    "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
    },
-   "versao": "2026.1",
+   "versao": "2026.2",
    "vigencia": {
-    "inicio": "2026-10-20",
+    "inicio": "2026-10-26",
     "fim": ""
    },
    "status": "rascunho",
@@ -6741,9 +6932,9 @@
     "Medicina (ASO)",
     "Fatores de risco"
    ],
-   "hash": "6c7ff2333289",
+   "hash": "114556129c51",
    "dados": {
-    "descricao": "Sugestões de exames por agente ou atividade. São sugestões a validar pelo médico responsável pelo PCMSO.",
+    "descricao": "Sugestões de exames por agente ou atividade. São sugestões a validar pelo médico responsável pelo PCMSO. Exames complementares são obrigatórios quando a exposição está acima do nível de ação ou a classificação de riscos do PGR indicar (NR-07, 7.5.12).",
     "regras": [
      {
       "agente": [
@@ -6752,23 +6943,81 @@
       "exames": [
        {
         "k": "audio",
-        "justificativa": "NR-07, Anexo II: audiometria na admissão, 6 meses após, anualmente e na demissão"
+        "justificativa": "NR-07, Anexo II, item 4.1: acima do nível de ação, audiometria na admissão, anualmente e na demissão (aceita a feita até 120 dias antes)"
        }
       ]
      },
      {
       "agente": [
-       "poeira",
-       "sílica"
+       "sílica",
+       "asbesto",
+       "amianto",
+       "carvão mineral"
       ],
       "exames": [
        {
         "k": "rx",
-        "justificativa": "NR-07, Anexo I: radiografia de tórax padrão OIT para poeiras minerais"
+        "justificativa": "NR-07, Anexo III, Quadro 1: sem avaliação quantitativa, radiografia OIT na admissão, a cada 2 anos até 15 anos de exposição (depois anual) e na demissão se a última tiver mais de 1 ano"
        },
        {
         "k": "espiro",
-        "justificativa": "NR-07, Anexo I: espirometria para poeiras minerais"
+        "justificativa": "NR-07, Anexo III, item 3.1: espirometria na admissão e a cada dois anos para poeiras minerais"
+       }
+      ]
+     },
+     {
+      "agente": [
+       "incômoda",
+       "pnos",
+       "baixa toxicidade"
+      ],
+      "exames": [
+       {
+        "k": "rxpnos",
+        "justificativa": "NR-07, Anexo III, Quadro 2: poeira de baixa toxicidade sem avaliação quantitativa, radiografia OIT na admissão e a cada 5 anos"
+       },
+       {
+        "k": "espiro",
+        "justificativa": "NR-07, Anexo III, item 3.1: espirometria na admissão e a cada dois anos para poeiras minerais"
+       }
+      ]
+     },
+     {
+      "agente": [
+       "tolueno"
+      ],
+      "exames": [
+       {
+        "k": "ocresol",
+        "justificativa": "NR-07, Anexo I, Quadro 1: orto-cresol na urina (ou tolueno no sangue/urina), coleta no fim da jornada; semestral (7.5.13), não obrigatório nos demais exames (7.5.15)"
+       }
+      ]
+     },
+     {
+      "agente": [
+       "xileno"
+      ],
+      "exames": [
+       {
+        "k": "metilhip",
+        "justificativa": "NR-07, Anexo I, Quadro 1: ácido metilhipúrico na urina, coleta no fim da jornada; semestral (7.5.13), não obrigatório nos demais exames (7.5.15)"
+       }
+      ]
+     },
+     {
+      "agente": [
+       "solvente",
+       "thinner",
+       "tinta"
+      ],
+      "exames": [
+       {
+        "k": "ocresol",
+        "justificativa": "Se o produto contém tolueno e a exposição está acima do nível de ação ou o PGR indicar: NR-07, Anexo I, Quadro 1; semestral (7.5.13)"
+       },
+       {
+        "k": "metilhip",
+        "justificativa": "Se o produto contém xileno e a exposição está acima do nível de ação ou o PGR indicar: NR-07, Anexo I, Quadro 1; semestral (7.5.13)"
        }
       ]
      },
@@ -6833,7 +7082,7 @@
       "exames": [
        {
         "k": "toxi",
-        "justificativa": "Motorista profissional: exame toxicológico (CLT, art. 168) e evento S-2221"
+        "justificativa": "Motorista profissional (CNH C, D ou E): exame toxicológico na admissão e no desligamento (CLT, art. 168, §6º) e evento S-2221"
        }
       ]
      }
@@ -6871,6 +7120,18 @@
       "nome": "Radiografia de tórax (padrão OIT)",
       "periodicidadeMeses": 24
      },
+     "rxpnos": {
+      "nome": "Radiografia de tórax (padrão OIT) – poeira de baixa toxicidade",
+      "periodicidadeMeses": 60
+     },
+     "ocresol": {
+      "nome": "Orto-cresol na urina",
+      "periodicidadeMeses": 6
+     },
+     "metilhip": {
+      "nome": "Ácido metilhipúrico na urina",
+      "periodicidadeMeses": 6
+     },
      "glic": {
       "nome": "Glicemia de jejum",
       "periodicidadeMeses": 12
@@ -6889,13 +7150,13 @@
    "arquivo": "regras/nr07-prazos.json",
    "fonte": {
     "orgao": "MTE",
-    "ato": "NR-07",
-    "url": "",
-    "pdf": ""
+    "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), itens 7.5.8 a 7.5.17, 7.6.1 e Anexo II",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+    "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
    },
-   "versao": "2026.1",
+   "versao": "2026.2",
    "vigencia": {
-    "inicio": "2026-10-20",
+    "inicio": "2026-10-26",
     "fim": ""
    },
    "status": "rascunho",
@@ -6908,7 +7169,7 @@
     "Medicina (ASO)",
     "Conferência técnica"
    ],
-   "hash": "1b9a6a1f8479",
+   "hash": "0b425c4c5c21",
    "dados": {
     "exameClinicoPeriodico": {
      "expostosOuCronicos_maxMeses": 12,
@@ -6931,10 +7192,30 @@
     "audiometria": {
      "momentos": [
       "admissional",
-      "6 meses após a admissão",
       "anual",
       "demissional"
+     ],
+     "demissionalAceitaAteDiasAntes": 120
+    },
+    "indicadoresBiologicos": {
+     "periodicidadeMeses": 6,
+     "toleranciaDias": 45,
+     "sazonal_periodicidadeMeses": 12,
+     "naoObrigatorioEm": [
+      "admissional",
+      "retorno ao trabalho",
+      "mudança de risco",
+      "demissional"
      ]
+    },
+    "espirometriaPoeirasMinerais": {
+     "momentos": [
+      "admissional",
+      "a cada 2 anos"
+     ]
+    },
+    "examesComplementaresAdmissional": {
+     "aceitaAteDiasAntes": 90
     }
    }
   },
@@ -6946,7 +7227,7 @@
    "fonte": {
     "orgao": "MTE / eSocial / Fundacentro",
     "ato": "NR-09 (Anexo 1); NR-15 (Anexos 1, 2, 8 e 11); NHO 01; eSocial – Tabela 24",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -6964,7 +7245,7 @@
     "Fatores de risco",
     "S-2240"
    ],
-   "hash": "4c741bb73df7",
+   "hash": "2cbabeb54708",
    "dados": {
     "descricao": "Catálogo inicial de perigos (ponto de partida do catálogo de riscos de cada conta): código da Tabela 24 do eSocial, tipo de avaliação, limite de tolerância, trajetória, efeito sugerido (escala da matriz do PGR), danos e medidas. Limites conforme NR-15 (Anexos 1, 2, 8 e 11), NR-09 (Anexo 1) e NHO 01; os demais itens são qualitativos. Transcrito do protótipo Ronda SST — conferir com as normas antes de marcar como conferido.",
     "colunas": [
@@ -7309,7 +7590,7 @@
    "fonte": {
     "orgao": "MTE / eSocial / Fundacentro",
     "ato": "NR-15 – Atividades e operações insalubres; NR-16 – Atividades e operações perigosas",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2025.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -7327,7 +7608,7 @@
     "LTCAT",
     "Fatores de risco"
    ],
-   "hash": "767b67ace386",
+   "hash": "e09e254a8de9",
    "dados": {
     "descricao": "Anexos da NR-15 (atividades e operações insalubres) e da NR-16 (atividades e operações perigosas) usados para indicar insalubridade e periculosidade no GHE. O Anexo 4 da NR-15 (iluminação) foi revogado e não consta.",
     "nr15": [
@@ -7364,7 +7645,7 @@
    "fonte": {
     "orgao": "MTE",
     "ato": "NR-01 (Portaria SEPRT 6.730/2020; Portaria MTE 1.419/2024)",
-    "url": "",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
     "pdf": ""
    },
    "versao": "2026.1",
@@ -7383,7 +7664,7 @@
     "Riscos psicossociais",
     "Conferência técnica"
    ],
-   "hash": "1f5ec6e943f6",
+   "hash": "58abd75dce14",
    "dados": {
     "descricao": "Parâmetros do PGR (NR-01, GRO): periodicidade de revisão do inventário de riscos e dimensões dos fatores de riscos psicossociais relacionados ao trabalho incluídos pela Portaria MTE nº 1.419/2024. Transcrito do protótipo Ronda SST — conferir com a NR-01 vigente antes de marcar como conferido.",
     "revisaoMeses": 24,

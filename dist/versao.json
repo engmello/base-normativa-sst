@@ -1,7 +1,7 @@
 {
- "versao": "2026.10.22-2c6ea4",
- "hash": "2c6ea40ba844",
- "gerado": "2026-10-22T12:25:21.585Z",
+ "versao": "2026.10.28-475c4c",
+ "hash": "475c4c7e8392",
+ "gerado": "2026-10-28T13:38:24.387Z",
  "itens": {
   "esocial-tabela-24": {
    "versao": "S-1.3 cons. até NT 07.2026 rev. 20.10.2026",
@@ -18,55 +18,61 @@
   "pgr-matriz": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "226abc6a36bf",
+   "hash": "835a6b3e68f3",
    "titulo": "PGR – Matriz de risco (efeitos × perfil de exposição) e Quadro 2 de ações"
+  },
+  "pgr-matrizes": {
+   "versao": "2026.1",
+   "status": "rascunho",
+   "hash": "b7400b2f184c",
+   "titulo": "PGR – Matrizes de risco alternativas (escolha por PGR)"
   },
   "ruido-criterios": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "b2aa47ec5771",
+   "hash": "0e3433b95d92",
    "titulo": "Ruído – critérios NHO 01 e NR-15 Anexo 1"
   },
   "calor-criterios": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "33ac7efc38a6",
+   "hash": "fc4c0e5ddc54",
    "titulo": "Calor – IBUTG, limite de exposição e nível de ação"
   },
   "vibracao-criterios": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "9460f2ca1041",
+   "hash": "2ab56a11454d",
    "titulo": "Vibração – limites de corpo inteiro e mãos e braços"
   },
   "nr07-exames-por-agente": {
-   "versao": "2026.1",
+   "versao": "2026.2",
    "status": "rascunho",
-   "hash": "6c7ff2333289",
+   "hash": "114556129c51",
    "titulo": "NR-07 – Exames sugeridos por agente ou atividade"
   },
   "nr07-prazos": {
-   "versao": "2026.1",
+   "versao": "2026.2",
    "status": "rascunho",
-   "hash": "1b9a6a1f8479",
+   "hash": "0b425c4c5c21",
    "titulo": "NR-07 – Periodicidades e prazos"
   },
   "catalogo-perigos": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "4c741bb73df7",
+   "hash": "2cbabeb54708",
    "titulo": "Catálogo inicial de perigos (código T24, LT, efeito, danos e medidas)"
   },
   "nr15-nr16-anexos": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "767b67ace386",
+   "hash": "e09e254a8de9",
    "titulo": "NR-15 e NR-16 – Anexos (insalubridade e periculosidade)"
   },
   "nr01-pgr": {
    "versao": "2026.1",
    "status": "rascunho",
-   "hash": "1f5ec6e943f6",
+   "hash": "58abd75dce14",
    "titulo": "NR-01 – PGR: revisão do inventário e dimensões psicossociais"
   }
  }
