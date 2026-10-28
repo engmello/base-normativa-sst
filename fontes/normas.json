@@ -1,0 +1,166 @@
+{
+  "descricao": "Textos oficiais das NRs que são base do app, baixados do site do MTE (página \"Normas regulamentadoras vigentes\"). Servem para conferir os itens da base; o texto oficial é o publicado no DOU. Os PDFs ficam só na pasta local fontes/pdf/ (fora do git) até decidir onde guardar; o hash permite conferir a cópia.",
+  "pagina": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/ctpp-nrs/normas-regulamentadoras-nrs",
+  "normas": [
+    {
+      "id": "nr-01",
+      "nome": "NR-01 – Disposições gerais e gerenciamento de riscos ocupacionais (GRO/PGR)",
+      "arquivo": "fontes/pdf/NR-01-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 398620,
+      "sha256": "39e0ced67472db5f6f93235ce5532701247a1b7dddf39fb866c379e605b32a21",
+      "usoNoApp": "PGR, inventário de riscos, plano de ação, matriz de risco, psicossociais"
+    },
+    {
+      "id": "nr-01-manual",
+      "nome": "Manual de aplicação do GRO/PGR da NR-01 (MTE, 2026)",
+      "arquivo": "fontes/pdf/NR-01-manual-GRO-PGR-2026.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/manual_gro_pgr_da_nr_1.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 12819226,
+      "sha256": "2865e511aa76e58e0d99528cb6f006657cf1c238168a3b3a24f0102a31afbca2",
+      "usoNoApp": "Orientação de aplicação do PGR (não é norma)"
+    },
+    {
+      "id": "nr-01-perguntas",
+      "nome": "Perguntas e respostas GRO/PGR (MTE, maio de 2026)",
+      "arquivo": "fontes/pdf/NR-01-perguntas-respostas-GRO-PGR-2026-05.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/PerguntaseRespostasGROPGRMaio2026.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 441712,
+      "sha256": "d061a0c3fdedb932056ead78bed666a41630951d83f4095b607648e4d2e7fd81",
+      "usoNoApp": "Orientação de aplicação do PGR (não é norma)"
+    },
+    {
+      "id": "nr-04",
+      "nome": "NR-04 – Serviços especializados em segurança e medicina do trabalho (SESMT)",
+      "arquivo": "fontes/pdf/NR-04-atualizada-2023.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-04-atualizada-2023.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 731088,
+      "sha256": "1e7bdfb832d7cda0ac012d55c818be2d945730cb64316f498198c6b2eae6dc84",
+      "usoNoApp": "Dimensionamento do SESMT, profissionais"
+    },
+    {
+      "id": "nr-05",
+      "nome": "NR-05 – Comissão interna de prevenção de acidentes e de assédio (CIPA)",
+      "arquivo": "fontes/pdf/NR-05-atualizada-2023.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/NR05atualizada2023.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 307004,
+      "sha256": "1edfa1ec7e85a3ae2d9430cdf2e86822c8fa5a511c9895e684aaa90058b3e20a",
+      "usoNoApp": "CIPA e designado"
+    },
+    {
+      "id": "nr-06",
+      "nome": "NR-06 – Equipamentos de proteção individual (EPI)",
+      "arquivo": "fontes/pdf/NR-06-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025-ii.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 298107,
+      "sha256": "1af315ea42668d5e37ef63da7007f065be30ad53bd3faaf03ff926e5465147eb",
+      "usoNoApp": "EPI, ficha de entrega, CA"
+    },
+    {
+      "id": "nr-07",
+      "nome": "NR-07 – Programa de controle médico de saúde ocupacional (PCMSO)",
+      "arquivo": "fontes/pdf/NR-07-atualizada-2022.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-07-atualizada-2022-1.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 754137,
+      "sha256": "f27b63bbe7cc1532810911d9fa5a56409ec955ab41e0d8eb66cd7869be938b63",
+      "usoNoApp": "PCMSO, ASO, exames (texto consolidado com a Portaria MTP 567/2022)"
+    },
+    {
+      "id": "nr-09",
+      "nome": "NR-09 – Avaliação e controle das exposições ocupacionais a agentes físicos, químicos e biológicos",
+      "arquivo": "fontes/pdf/NR-09-atualizada-2026.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 483218,
+      "sha256": "9cc608eb7766ca7565234d2069d3491d2714e26d0c76de3aa043105521a8d584",
+      "usoNoApp": "Nível de ação, avaliação quantitativa, anexos de vibração e calor"
+    },
+    {
+      "id": "nr-10",
+      "nome": "NR-10 – Segurança em instalações e serviços em eletricidade",
+      "arquivo": "fontes/pdf/NR-10-atualizada-2026.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-10-atualizada-2026-1.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 541490,
+      "sha256": "7eb75df47586ff18f362de7a5a5e2501a6e49c6b0058cad8e561121f2b8edd3d",
+      "usoNoApp": "Treinamentos, APR, exames"
+    },
+    {
+      "id": "nr-12",
+      "nome": "NR-12 – Segurança no trabalho em máquinas e equipamentos",
+      "arquivo": "fontes/pdf/NR-12-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-12-atualizada-2025.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 3266392,
+      "sha256": "425b315a2d2bd579e3deb6739375311264de3e10947c0a3fa3739e2b9845d1fe",
+      "usoNoApp": "Treinamentos, APR"
+    },
+    {
+      "id": "nr-15",
+      "nome": "NR-15 – Atividades e operações insalubres",
+      "arquivo": "fontes/pdf/NR-15-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2025.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 2421847,
+      "sha256": "d3b04a284837f1965a4f32491a2ce8e688db4131eae6a647a2354aae6459b97e",
+      "usoNoApp": "LTCAT, insalubridade, limites de tolerância"
+    },
+    {
+      "id": "nr-16",
+      "nome": "NR-16 – Atividades e operações perigosas",
+      "arquivo": "fontes/pdf/NR-16-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-16-atualizada-2025-ii.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 399810,
+      "sha256": "4072fa8243d650c41713e72de23b804470696a6d955503aee7372edd7a822c68",
+      "usoNoApp": "LTCAT, periculosidade"
+    },
+    {
+      "id": "nr-17",
+      "nome": "NR-17 – Ergonomia",
+      "arquivo": "fontes/pdf/NR-17-atualizada-2023.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-17-atualizada-2023.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 379629,
+      "sha256": "9f17dd07d1fd3906ed1c658a4d1652acbe18156bbdd961566c9c9d2f342d6fdc",
+      "usoNoApp": "Riscos ergonômicos e psicossociais (AEP/AET)"
+    },
+    {
+      "id": "nr-18",
+      "nome": "NR-18 – Segurança e saúde no trabalho na indústria da construção",
+      "arquivo": "fontes/pdf/NR-18-atualizada-2026.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/NR18atualizada2026I.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 747510,
+      "sha256": "10cce2b8c02207fbcb1d94f3b0e7361cdc23149dcdf2b1437b932dc653496e90",
+      "usoNoApp": "Obras, PGR da construção, treinamentos"
+    },
+    {
+      "id": "nr-33",
+      "nome": "NR-33 – Segurança e saúde nos trabalhos em espaços confinados",
+      "arquivo": "fontes/pdf/NR-33-atualizada-2022.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33-atualizada-2022-_retificada.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 354789,
+      "sha256": "d1c9e74aeed20889a6a461b0e27e3624d5711c86d34c1c7ee9fe88325dc938ca",
+      "usoNoApp": "Treinamentos, APR, exames"
+    },
+    {
+      "id": "nr-35",
+      "nome": "NR-35 – Trabalho em altura",
+      "arquivo": "fontes/pdf/NR-35-atualizada-2025.pdf",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-35-atualizada-2025-1.pdf",
+      "baixadoEm": "2026-10-27",
+      "bytes": 464448,
+      "sha256": "a1ed910458360c37881dcad31f7dc0969377ca81ffe61023b95d7cbcb1299486",
+      "usoNoApp": "Treinamentos, APR, exames"
+    }
+  ]
+}

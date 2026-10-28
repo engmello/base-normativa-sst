@@ -1,11 +1,11 @@
 {
-  "descricao": "Matrizes de risco alternativas para o PGR. A NR-01 (item 1.5.4.4.2) exige nível de risco pela combinação da severidade com a probabilidade, com critério documentado, mas não fixa a matriz. A matriz padrão (efeito × perfil, 5×5) está em pgr-matriz; aqui ficam as demais que uma conta pode escolher, por exemplo para manter a metodologia de um PGR anterior numa revisão.",
+  "descricao": "Matrizes de risco alternativas para o PGR. A NR-01 exige nível de risco pela combinação da severidade com a probabilidade (1.5.4.4.2), deixa a ferramenta à escolha da organização (1.5.4.4.2.1) e manda documentar as gradações, os níveis e os critérios de classificação e decisão (1.5.4.4.2.2); não fixa a matriz. A matriz padrão (efeito × perfil, 5×5) está em pgr-matriz; aqui ficam as demais que uma conta pode escolher, por exemplo para manter a metodologia de um PGR anterior numa revisão.",
   "matrizes": [
     {
       "id": "efeito-frequencia-4x4",
       "nome": "Efeito × frequência da exposição (4×4)",
       "tipo": "tabela",
-      "descricao": "Nível de risco lido numa tabela de efeito (severidade) por frequência da exposição, com cinco classes. É a matriz dos cartões de risco do ARMS antes da fusão com o Bloco 5.",
+      "descricao": "Nível de risco lido numa tabela de efeito (severidade) por frequência da exposição, com cinco classes. É a matriz dos cartões de risco do ARMS antes da fusão com o Bloco 5. A frequência faz o papel da probabilidade: ao escolhê-la, considere também o cumprimento das NR e a eficácia das medidas de prevenção já implantadas e, para agentes físicos, químicos e biológicos, a comparação com os valores de referência da NR-09 (NR-01, 1.5.4.4.5.1 a 1.5.4.4.5.4). Na severidade, quando houver mais de uma consequência possível, vale a de maior magnitude (1.5.4.4.4.1).",
       "eixos": { "linhas": "Efeito (severidade)", "colunas": "Frequência da exposição" },
       "efeitos": [
         { "valor": 1, "nome": "Leve", "descricao": "Lesão ou desconforto sem afastamento; efeito reversível" },

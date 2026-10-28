@@ -1,5 +1,11 @@
 # Histórico da base normativa
 
+## 2026-10-27 – textos oficiais das NRs base do app
+- Registro em `fontes/normas.json` (endereço, data, tamanho e hash) dos PDFs do MTE baixados: NR-01 (texto de 2025, com o manual e as perguntas e respostas do GRO/PGR de 2026), NR-04, NR-05, NR-06, NR-07 (consolidada de 2022), NR-09, NR-10, NR-12, NR-15, NR-16, NR-17, NR-18, NR-33 e NR-35. Os PDFs ficam só na pasta local `fontes/pdf/` (fora do git) até decidir onde guardar.
+- Itens da matriz do PGR, `nr01-pgr`, ruído, calor, vibração, catálogo de perigos e anexos NR-15/NR-16 passam a apontar para o endereço oficial da norma.
+- `pgr-matrizes` cita os itens da NR-01 conferidos no texto oficial (1.5.4.4.2.1, 1.5.4.4.2.2, 1.5.4.4.4.1 e 1.5.4.4.5.1 a 1.5.4.4.5.4); a 4×4 orienta considerar a eficácia das medidas ao escolher a frequência.
+- Monitor `mte-nrs`: endereço confirmado.
+
 ## 2026-10-27 – matrizes de risco alternativas para o PGR (rascunho)
 - Novo item `pgr-matrizes`: matrizes que a conta pode escolher em cada PGR, além da padrão. A NR-01 (1.5.4.4.2) exige critério documentado, não fixa a matriz; escolher a matriz do PGR anterior mantém as avaliações numa revisão.
 - Primeira alternativa: `efeito-frequencia-4x4` — tabela efeito (Leve, Moderado, Sério, Severo) × frequência (Ocasional, Intermitente, Habitual, Permanente), classes Irrelevante a Crítico com aceitabilidade e prazo; é a matriz dos cartões de risco do ARMS antes da fusão.
