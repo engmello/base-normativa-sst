@@ -86,13 +86,43 @@
       "arquivo": "parametros/pgr-matriz.json",
       "fonte": {
         "orgao": "Metodologia adotada pela consultoria",
-        "ato": "NR-01 (gerenciamento de riscos ocupacionais) – a NR exige critério documentado, não fixa a matriz",
-        "url": "",
+        "ato": "NR-01, itens 1.5.4.4.2 a 1.5.4.4.5 – a NR exige critério documentado (1.5.4.4.2.2), não fixa a matriz",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
       "vigencia": {
         "inicio": "2026-10-20",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "Inventário de riscos",
+        "Plano de ação"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
+      "id": "pgr-matrizes",
+      "titulo": "PGR – Matrizes de risco alternativas (escolha por PGR)",
+      "tipo": "parametro",
+      "arquivo": "parametros/pgr-matrizes.json",
+      "fonte": {
+        "orgao": "Metodologias de avaliação de risco",
+        "ato": "NR-01, itens 1.5.4.4.2 a 1.5.4.4.5 – a organização escolhe a ferramenta (1.5.4.4.2.1) e documenta os critérios (1.5.4.4.2.2)",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-27",
         "fim": ""
       },
       "status": "rascunho",
@@ -117,7 +147,7 @@
       "fonte": {
         "orgao": "Fundacentro / MTE",
         "ato": "NHO 01 (Fundacentro); NR-15, Anexo 1; NR-09, Anexo 1",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
@@ -148,7 +178,7 @@
       "fonte": {
         "orgao": "MTE / Fundacentro",
         "ato": "NR-09, Anexo 3; NR-15, Anexo 3; NHO 06",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
@@ -176,7 +206,7 @@
       "fonte": {
         "orgao": "MTE / Fundacentro",
         "ato": "NR-09, Anexo 1; NR-15, Anexo 8; NHO 09 e NHO 10",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
@@ -204,13 +234,13 @@
       "arquivo": "regras/exames-por-agente.json",
       "fonte": {
         "orgao": "MTE",
-        "ato": "NR-07, Anexos I e II; NR-35; NR-10; CLT art. 168 (toxicológico)",
-        "url": "",
-        "pdf": ""
+        "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), Anexos I, II e III; NR-35; NR-10; CLT art. 168, §6º",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+        "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
       },
-      "versao": "2026.1",
+      "versao": "2026.2",
       "vigencia": {
-        "inicio": "2026-10-20",
+        "inicio": "2026-10-26",
         "fim": ""
       },
       "status": "rascunho",
@@ -234,13 +264,13 @@
       "arquivo": "regras/nr07-prazos.json",
       "fonte": {
         "orgao": "MTE",
-        "ato": "NR-07",
-        "url": "",
-        "pdf": ""
+        "ato": "NR-07 (Portaria SEPRT 6.734/2020, alterada pela Portaria MTP 567/2022), itens 7.5.8 a 7.5.17, 7.6.1 e Anexo II",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-07_atualizada_2020.pdf",
+        "pdf": "fontes/pdf/NR-07-atualizada-2020.pdf"
       },
-      "versao": "2026.1",
+      "versao": "2026.2",
       "vigencia": {
-        "inicio": "2026-10-20",
+        "inicio": "2026-10-26",
         "fim": ""
       },
       "status": "rascunho",
@@ -265,7 +295,7 @@
       "fonte": {
         "orgao": "MTE / eSocial / Fundacentro",
         "ato": "NR-09 (Anexo 1); NR-15 (Anexos 1, 2, 8 e 11); NHO 01; eSocial – Tabela 24",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-09-atualizada-2026.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
@@ -295,7 +325,7 @@
       "fonte": {
         "orgao": "MTE / eSocial / Fundacentro",
         "ato": "NR-15 – Atividades e operações insalubres; NR-16 – Atividades e operações perigosas",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-15-atualizada-2025.pdf",
         "pdf": ""
       },
       "versao": "2026.1",
@@ -325,7 +355,7 @@
       "fonte": {
         "orgao": "MTE",
         "ato": "NR-01 (Portaria SEPRT 6.730/2020; Portaria MTE 1.419/2024)",
-        "url": "",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
         "pdf": ""
       },
       "versao": "2026.1",

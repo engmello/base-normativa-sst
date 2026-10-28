@@ -1,10 +1,18 @@
 {
-  "descricao": "Sugestões de exames por agente ou atividade. São sugestões a validar pelo médico responsável pelo PCMSO.",
+  "descricao": "Sugestões de exames por agente ou atividade. São sugestões a validar pelo médico responsável pelo PCMSO. Exames complementares são obrigatórios quando a exposição está acima do nível de ação ou a classificação de riscos do PGR indicar (NR-07, 7.5.12).",
   "regras": [
-    { "agente": ["ruído"], "exames": [{ "k": "audio", "justificativa": "NR-07, Anexo II: audiometria na admissão, 6 meses após, anualmente e na demissão" }] },
-    { "agente": ["poeira", "sílica"], "exames": [
-      { "k": "rx", "justificativa": "NR-07, Anexo I: radiografia de tórax padrão OIT para poeiras minerais" },
-      { "k": "espiro", "justificativa": "NR-07, Anexo I: espirometria para poeiras minerais" } ] },
+    { "agente": ["ruído"], "exames": [{ "k": "audio", "justificativa": "NR-07, Anexo II, item 4.1: acima do nível de ação, audiometria na admissão, anualmente e na demissão (aceita a feita até 120 dias antes)" }] },
+    { "agente": ["sílica", "asbesto", "amianto", "carvão mineral"], "exames": [
+      { "k": "rx", "justificativa": "NR-07, Anexo III, Quadro 1: sem avaliação quantitativa, radiografia OIT na admissão, a cada 2 anos até 15 anos de exposição (depois anual) e na demissão se a última tiver mais de 1 ano" },
+      { "k": "espiro", "justificativa": "NR-07, Anexo III, item 3.1: espirometria na admissão e a cada dois anos para poeiras minerais" } ] },
+    { "agente": ["incômoda", "pnos", "baixa toxicidade"], "exames": [
+      { "k": "rxpnos", "justificativa": "NR-07, Anexo III, Quadro 2: poeira de baixa toxicidade sem avaliação quantitativa, radiografia OIT na admissão e a cada 5 anos" },
+      { "k": "espiro", "justificativa": "NR-07, Anexo III, item 3.1: espirometria na admissão e a cada dois anos para poeiras minerais" } ] },
+    { "agente": ["tolueno"], "exames": [{ "k": "ocresol", "justificativa": "NR-07, Anexo I, Quadro 1: orto-cresol na urina (ou tolueno no sangue/urina), coleta no fim da jornada; semestral (7.5.13), não obrigatório nos demais exames (7.5.15)" }] },
+    { "agente": ["xileno"], "exames": [{ "k": "metilhip", "justificativa": "NR-07, Anexo I, Quadro 1: ácido metilhipúrico na urina, coleta no fim da jornada; semestral (7.5.13), não obrigatório nos demais exames (7.5.15)" }] },
+    { "agente": ["solvente", "thinner", "tinta"], "exames": [
+      { "k": "ocresol", "justificativa": "Se o produto contém tolueno e a exposição está acima do nível de ação ou o PGR indicar: NR-07, Anexo I, Quadro 1; semestral (7.5.13)" },
+      { "k": "metilhip", "justificativa": "Se o produto contém xileno e a exposição está acima do nível de ação ou o PGR indicar: NR-07, Anexo I, Quadro 1; semestral (7.5.13)" } ] },
     { "agente": ["fumo"], "exames": [{ "k": "espiro", "justificativa": "Exposição respiratória a fumos metálicos; avaliar indicador biológico do metal (NR-07, Anexo I)" }] },
     { "agente": ["queda", "altura"], "exames": [
       { "k": "ecg", "justificativa": "Aptidão para trabalho em altura (NR-35), a critério do médico" },
@@ -12,7 +20,7 @@
       { "k": "glic", "justificativa": "Aptidão para trabalho em altura (NR-35), a critério do médico" } ] },
     { "agente": ["choque", "energiz"], "exames": [{ "k": "ecg", "justificativa": "Aptidão para serviços em eletricidade (NR-10), a critério do médico" }] },
     { "agente": ["radia"], "exames": [{ "k": "visual", "justificativa": "Exposição a radiação não ionizante (arco de solda)" }] },
-    { "funcao": ["motorista"], "exames": [{ "k": "toxi", "justificativa": "Motorista profissional: exame toxicológico (CLT, art. 168) e evento S-2221" }] }
+    { "funcao": ["motorista"], "exames": [{ "k": "toxi", "justificativa": "Motorista profissional (CNH C, D ou E): exame toxicológico na admissão e no desligamento (CLT, art. 168, §6º) e evento S-2221" }] }
   ],
   "exames": {
     "clinico": { "nome": "Exame clínico (anamnese e exame físico)", "periodicidadeMeses": 12 },
@@ -23,6 +31,9 @@
     "ecg": { "nome": "Eletrocardiograma", "periodicidadeMeses": 12 },
     "eeg": { "nome": "Eletroencefalograma", "periodicidadeMeses": 24 },
     "rx": { "nome": "Radiografia de tórax (padrão OIT)", "periodicidadeMeses": 24 },
+    "rxpnos": { "nome": "Radiografia de tórax (padrão OIT) – poeira de baixa toxicidade", "periodicidadeMeses": 60 },
+    "ocresol": { "nome": "Orto-cresol na urina", "periodicidadeMeses": 6 },
+    "metilhip": { "nome": "Ácido metilhipúrico na urina", "periodicidadeMeses": 6 },
     "glic": { "nome": "Glicemia de jejum", "periodicidadeMeses": 12 },
     "toxi": { "nome": "Exame toxicológico (larga janela)", "periodicidadeMeses": 30 }
   }

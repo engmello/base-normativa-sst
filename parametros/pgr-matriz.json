@@ -1,4 +1,7 @@
 {
+  "id": "efeito-perfil-5x5",
+  "nome": "Efeito × perfil de exposição (5×5)",
+  "tipo": "produto",
   "formula": "nivel = efeito × perfil",
   "efeitos": [
     { "valor": 2, "nome": "Leve", "descricao": "Efeitos reversíveis pouco preocupantes ou sem efeitos adversos conhecidos" },

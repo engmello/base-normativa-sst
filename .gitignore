@@ -4,3 +4,5 @@ monitor/relatorio.md
 # downloads brutos: só o registro (url, data e hash) vai para o repositório; o PDF usado fica em fontes/pdf/
 fontes/bruto/*
 !fontes/bruto/registro.json
+# textos das NRs (fontes/normas.json): ficam só nesta pasta até decidir onde guardar (plano B18)
+fontes/pdf/NR-*.pdf
