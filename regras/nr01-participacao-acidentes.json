@@ -1,0 +1,50 @@
+{
+  "descricao": "NR-01: análise de acidentes e doenças relacionadas ao trabalho (1.5.5.5), participação e consulta aos trabalhadores e comunicação dos riscos (1.5.3.3) e GRO nas relações com contratadas (1.5.8) — conferido com o texto da NR-01 atualizada em 2025 (fontes/pdf/NR-01-atualizada-2025.pdf) em 2026-10-30.",
+  "analiseAcidentes": {
+    "item": "1.5.5.5",
+    "eventos": [
+      { "id": "acidente", "nome": "Acidente do trabalho", "item": "1.5.5.5.1" },
+      { "id": "doenca", "nome": "Doença relacionada ao trabalho", "item": "1.5.5.5.1" },
+      { "id": "evento_perigoso", "nome": "Evento perigoso que poderia ter consequências graves", "item": "1.5.5.5.1.1" }
+    ],
+    "situacoesGeradoras": {
+      "item": "1.5.5.5.2 a",
+      "fatores": [
+        { "id": "atividade", "nome": "Atividades efetivamente desenvolvidas" },
+        { "id": "ambiente", "nome": "Ambiente de trabalho" },
+        { "id": "materiais", "nome": "Materiais" },
+        { "id": "processo", "nome": "Processo produtivo" },
+        { "id": "organizacao", "nome": "Organização do trabalho" },
+        { "id": "outros", "nome": "Outros fatores relacionados com o evento" }
+      ]
+    },
+    "dadosConsiderados": {
+      "item": "1.5.5.5.2 b",
+      "campos": [
+        { "id": "organizacao", "nome": "Dados da organização" },
+        { "id": "epidemiologicos", "nome": "Dados epidemiológicos" },
+        { "id": "trabalhadores", "nome": "Informações prestadas pelos trabalhadores" }
+      ]
+    },
+    "evidencias": { "item": "1.5.5.5.2 c", "texto": "fornecer evidências para revisar e aprimorar as medidas de prevenção existentes" },
+    "documentada": { "item": "1.5.5.5.2", "texto": "As análises de acidentes e doenças relacionadas ao trabalho devem ser documentadas." }
+  },
+  "participacao": {
+    "item": "1.5.3.3",
+    "consulta": { "alinea": "b", "texto": "a consulta aos trabalhadores quanto à percepção de riscos ocupacionais, podendo para este fim ser adotadas as manifestações da CIPA, quando houver" },
+    "comunicacao": { "alinea": "c", "texto": "comunicar aos trabalhadores os riscos consolidados no inventário de riscos e as medidas de prevenção previstas no plano de ação" },
+    "formasConsulta": ["Manifestação da CIPA", "Reunião", "Questionário", "Entrevista", "DDS"],
+    "meiosComunicacao": ["Ordem de serviço (OSS)", "DDS", "Treinamento", "Mural ou cartaz", "Reunião", "Meio digital"]
+  },
+  "contratadas": {
+    "item": "1.5.8",
+    "modos": [
+      { "id": "pgr_contratante", "nome": "Incluídas no PGR da contratante", "item": "1.5.8.1" },
+      { "id": "programa_contratada", "nome": "Programa da contratada (inventário e plano de ação fornecidos)", "item": "1.5.8.1.1" },
+      { "id": "titular_socios", "nome": "Serviço só pelo titular ou sócios — medidas da contratante estendidas", "item": "1.5.8.1.2" }
+    ],
+    "informarContratada": { "item": "1.5.8.2", "texto": "A contratante informa à contratada os riscos sob sua responsabilidade que possam impactar nas atividades da contratada." },
+    "informarContratante": { "item": "1.5.8.3", "texto": "A contratada informa à contratante os riscos sob sua responsabilidade que possam impactar nas atividades da contratante." },
+    "medidasConjuntas": { "item": "1.5.8.4", "texto": "Riscos que resultem da interação das atividades: medidas de prevenção definidas em conjunto, sob a coordenação da contratante." }
+  }
+}

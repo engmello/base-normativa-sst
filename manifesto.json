@@ -379,6 +379,36 @@
       ]
     },
     {
+      "id": "nr01-participacao-acidentes",
+      "titulo": "NR-01 – Análise de acidentes, participação dos trabalhadores e contratadas",
+      "tipo": "regra",
+      "arquivo": "regras/nr01-participacao-acidentes.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-01, itens 1.5.3.3, 1.5.5.5 e 1.5.8",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-30",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "Plano de ação",
+        "Conferência técnica"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
       "id": "nr17-aep",
       "titulo": "NR-17 – Avaliação ergonômica preliminar (AEP) e AET",
       "tipo": "regra",
