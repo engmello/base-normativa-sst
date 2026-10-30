@@ -1,0 +1,47 @@
+{
+  "descricao": "Avaliação ergonômica preliminar (AEP) e Análise Ergonômica do Trabalho (AET) da NR-17, item 17.3 — conferido com o texto da NR-17 atualizada em 2023 (fontes/pdf/NR-17-atualizada-2023.pdf) em 2026-10-29.",
+  "fatores": [
+    { "id": "organizacao", "item": "17.4", "nome": "Organização do trabalho" },
+    { "id": "cargas", "item": "17.5", "nome": "Levantamento, transporte e descarga individual de cargas" },
+    { "id": "mobiliario", "item": "17.6", "nome": "Mobiliário dos postos de trabalho" },
+    { "id": "equipamentos", "item": "17.7", "nome": "Trabalho com máquinas, equipamentos e ferramentas manuais" },
+    { "id": "conforto", "item": "17.8", "nome": "Condições de conforto no ambiente de trabalho" }
+  ],
+  "abordagens": {
+    "item": "17.3.1.1",
+    "opcoes": ["Qualitativa", "Semiquantitativa", "Quantitativa", "Combinação"]
+  },
+  "registro": { "item": "17.3.1.2.1", "texto": "A avaliação ergonômica preliminar das situações de trabalho deve ser registrada pela organização." },
+  "ouvirTrabalhadores": { "item": "17.3.8", "texto": "A organização deve garantir que os empregados sejam ouvidos durante o processo da avaliação ergonômica preliminar e na AET." },
+  "aetQuando": {
+    "item": "17.3.2",
+    "alineas": [
+      { "alinea": "a", "texto": "observada a necessidade de uma avaliação mais aprofundada da situação" },
+      { "alinea": "b", "texto": "identificadas inadequações ou insuficiência das ações adotadas" },
+      { "alinea": "c", "texto": "sugerida pelo acompanhamento de saúde dos trabalhadores, nos termos do PCMSO e da alínea \"c\" do subitem 1.5.5.1.1 da NR-01" },
+      { "alinea": "d", "texto": "indicada causa relacionada às condições de trabalho na análise de acidentes e doenças relacionadas ao trabalho, nos termos do PGR" }
+    ]
+  },
+  "aetEtapas": {
+    "item": "17.3.3",
+    "etapas": [
+      { "alinea": "a", "texto": "análise da demanda e, quando aplicável, reformulação do problema" },
+      { "alinea": "b", "texto": "análise do funcionamento da organização, dos processos, das situações de trabalho e da atividade" },
+      { "alinea": "c", "texto": "descrição e justificativa para definição de métodos, técnicas e ferramentas adequados para a análise e sua aplicação" },
+      { "alinea": "d", "texto": "estabelecimento de diagnóstico" },
+      { "alinea": "e", "texto": "recomendações para as situações de trabalho analisadas" },
+      { "alinea": "f", "texto": "restituição dos resultados, validação e revisão das intervenções efetuadas, quando necessária, com a participação dos trabalhadores" }
+    ]
+  },
+  "dispensaAet": {
+    "item": "17.3.4 e 17.3.4.1",
+    "portes": ["ME", "EPP"],
+    "grausDeRisco": [1, 2],
+    "mei": true,
+    "excetoAlineas": ["c", "d"],
+    "texto": "ME e EPP de graus de risco 1 e 2 e o MEI não são obrigados a elaborar a AET; ME e EPP de graus 1 e 2 devem realizá-la nas situações das alíneas \"c\" e \"d\" do 17.3.2."
+  },
+  "inventario": { "item": "17.3.5", "texto": "Integram o inventário de riscos do PGR os resultados da avaliação ergonômica preliminar e a revisão da identificação dos perigos e da avaliação dos riscos indicada pela AET." },
+  "planoAcao": { "item": "17.3.6", "texto": "Planos de ação, nos termos do PGR, para as medidas decorrentes da avaliação ergonômica preliminar e para as recomendações da AET." },
+  "guardaAetAnos": { "item": "17.3.7", "valor": 20 }
+}

@@ -377,6 +377,37 @@
       "monitor": [
         "mte-nrs"
       ]
+    },
+    {
+      "id": "nr17-aep",
+      "titulo": "NR-17 – Avaliação ergonômica preliminar (AEP) e AET",
+      "tipo": "regra",
+      "arquivo": "regras/nr17-aep.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-17, item 17.3 (Portaria MTP 423/2021)",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-17-atualizada-2023.pdf",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-29",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "Inventário de riscos",
+        "Plano de ação",
+        "Conferência técnica"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
     }
   ]
 }
