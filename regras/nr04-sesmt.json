@@ -1,0 +1,59 @@
+{
+  "descricao": "NR-04 – dimensionamento do SESMT (item 4.5 e Anexo II) — conferido com o texto da NR-04 (fontes/pdf) em 2026-10-30. Valores por grau de risco e faixa de empregados do estabelecimento; '*' tempo parcial (mínimo de três horas); '***' o auxiliar/técnico de enfermagem pode ser substituído por enfermeiro do trabalho em tempo parcial.",
+  "item": "4.5 e Anexo II",
+  "regras": {
+    "contagem": "4.5.1: número de empregados da organização no estabelecimento e o maior grau de risco entre a atividade principal (CNPJ, 4.5.1.1) e a preponderante (que ocupa mais trabalhadores, 4.5.1.2).",
+    "terceiros": "4.5.2: somam-se os trabalhadores das contratadas em trabalho não eventual nas dependências da contratante, salvo os atendidos pelo SESMT das contratadas (4.5.2.2)."
+  },
+  "faixas": [
+    { "id": "50-100", "de": 50, "ate": 100 },
+    { "id": "101-250", "de": 101, "ate": 250 },
+    { "id": "251-500", "de": 251, "ate": 500 },
+    { "id": "501-1000", "de": 501, "ate": 1000 },
+    { "id": "1001-2000", "de": 1001, "ate": 2000 },
+    { "id": "2001-3500", "de": 2001, "ate": 3500 },
+    { "id": "3501-5000", "de": 3501, "ate": 5000 }
+  ],
+  "acima5000": { "grupo": 4000, "fracaoMinima": 2000, "texto": "(**) Acima de 5.000: o dimensionamento da faixa de 3.501 a 5.000, acrescido do de cada grupo de 4.000 ou fração acima de 2.000." },
+  "profissionais": [
+    { "id": "tecnico", "nome": "Técnico de Segurança do Trabalho" },
+    { "id": "engenheiro", "nome": "Engenheiro de Segurança do Trabalho" },
+    { "id": "aux_enfermagem", "nome": "Auxiliar/Técnico de Enfermagem do Trabalho" },
+    { "id": "enfermeiro", "nome": "Enfermeiro do Trabalho" },
+    { "id": "medico", "nome": "Médico do Trabalho" }
+  ],
+  "quadro": {
+    "1": {
+      "tecnico":        { "501-1000": "1", "1001-2000": "1", "2001-3500": "1", "3501-5000": "2", "acima": "1" },
+      "engenheiro":     { "2001-3500": "1*", "3501-5000": "1", "acima": "1*" },
+      "aux_enfermagem": { "2001-3500": "1***", "3501-5000": "1", "acima": "1" },
+      "enfermeiro":     { "3501-5000": "1*" },
+      "medico":         { "1001-2000": "1*", "2001-3500": "1*", "3501-5000": "1", "acima": "1*" }
+    },
+    "2": {
+      "tecnico":        { "501-1000": "1", "1001-2000": "1", "2001-3500": "2", "3501-5000": "5", "acima": "1" },
+      "engenheiro":     { "1001-2000": "1*", "2001-3500": "1", "3501-5000": "1", "acima": "1*" },
+      "aux_enfermagem": { "1001-2000": "1***", "2001-3500": "1***", "3501-5000": "1", "acima": "1" },
+      "enfermeiro":     { "3501-5000": "1" },
+      "medico":         { "1001-2000": "1*", "2001-3500": "1", "3501-5000": "1", "acima": "1" }
+    },
+    "3": {
+      "tecnico":        { "101-250": "1", "251-500": "2", "501-1000": "3", "1001-2000": "4", "2001-3500": "6", "3501-5000": "8", "acima": "3" },
+      "engenheiro":     { "501-1000": "1*", "1001-2000": "1", "2001-3500": "1", "3501-5000": "2", "acima": "1" },
+      "aux_enfermagem": { "1001-2000": "1***", "2001-3500": "1", "3501-5000": "1", "acima": "1" },
+      "enfermeiro":     { "2001-3500": "1", "3501-5000": "1" },
+      "medico":         { "501-1000": "1*", "1001-2000": "1", "2001-3500": "1", "3501-5000": "2", "acima": "1" }
+    },
+    "4": {
+      "tecnico":        { "50-100": "1", "101-250": "2", "251-500": "3", "501-1000": "4", "1001-2000": "5", "2001-3500": "8", "3501-5000": "10", "acima": "3" },
+      "engenheiro":     { "101-250": "1*", "251-500": "1*", "501-1000": "1", "1001-2000": "1", "2001-3500": "2", "3501-5000": "3", "acima": "1" },
+      "aux_enfermagem": { "501-1000": "1***", "1001-2000": "1***", "2001-3500": "1", "3501-5000": "1", "acima": "1" },
+      "enfermeiro":     { "2001-3500": "1", "3501-5000": "1" },
+      "medico":         { "101-250": "1*", "251-500": "1*", "501-1000": "1", "1001-2000": "1", "2001-3500": "2", "3501-5000": "3", "acima": "1" }
+    }
+  },
+  "notas": {
+    "*": "Tempo parcial (mínimo de três horas).",
+    "***": "O empregador pode optar pela contratação de um enfermeiro do trabalho em tempo parcial, em substituição ao auxiliar ou técnico de enfermagem do trabalho."
+  }
+}

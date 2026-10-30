@@ -409,6 +409,65 @@
       ]
     },
     {
+      "id": "nr01-dispensa-me-epp",
+      "titulo": "NR-01 – Dispensa de PGR e PCMSO para MEI, ME e EPP (1.8)",
+      "tipo": "regra",
+      "arquivo": "regras/nr01-dispensa-me-epp.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-01, item 1.8",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-30",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "PGR",
+        "PCMSO",
+        "Conferência técnica"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
+      "id": "nr04-sesmt",
+      "titulo": "NR-04 – Dimensionamento do SESMT (Anexo II)",
+      "tipo": "regra",
+      "arquivo": "regras/nr04-sesmt.json",
+      "fonte": {
+        "orgao": "MTE",
+        "ato": "NR-04, item 4.5 e Anexo II (Portaria MTP 2.318/2022)",
+        "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-04-atualizada-2023.pdf",
+        "pdf": ""
+      },
+      "versao": "2026.1",
+      "vigencia": {
+        "inicio": "2026-10-30",
+        "fim": ""
+      },
+      "status": "rascunho",
+      "conferido": {
+        "por": "",
+        "em": ""
+      },
+      "usadoEm": [
+        "Empregadores",
+        "Conferência técnica"
+      ],
+      "monitor": [
+        "mte-nrs"
+      ]
+    },
+    {
       "id": "nr17-aep",
       "titulo": "NR-17 – Avaliação ergonômica preliminar (AEP) e AET",
       "tipo": "regra",
