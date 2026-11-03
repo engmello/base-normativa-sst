@@ -1,0 +1,17 @@
+{
+  "descricao": "NR-01 1.8 – tratamento diferenciado ao MEI, ME e EPP: dispensa de elaborar o PGR e o PCMSO — conferido com o texto da NR-01 atualizada em 2025 em 2026-10-30. A dispensa vale só para a elaboração do documento (1.8.5); os graus de risco são os da NR-04 (1.8.7).",
+  "item": "1.8",
+  "pgr": {
+    "mei": { "item": "1.8.1", "texto": "O MEI está dispensado de elaborar o PGR; a contratante do MEI deve incluí-lo nas suas ações de prevenção e no seu PGR quando ele atuar em suas dependências (1.8.1.1)." },
+    "meEpp": { "item": "1.8.4", "portes": ["ME", "EPP"], "grausDeRisco": [1, 2], "semExposicao": ["Físico", "Químico", "Biológico"],
+      "texto": "ME e EPP de graus de risco 1 e 2 que, no levantamento preliminar de perigos, não identificarem exposições ocupacionais a agentes físicos, químicos e biológicos e declararem as informações digitais (1.6.1) ficam dispensadas da elaboração do PGR." },
+    "divulgar": { "item": "1.8.4.1", "texto": "As informações digitais declaradas devem ser divulgadas junto aos trabalhadores." }
+  },
+  "pcmso": {
+    "item": "1.8.6", "portes": ["MEI", "ME", "EPP"], "grausDeRisco": [1, 2], "semExposicao": ["Físico", "Químico", "Biológico", "Ergonômico"],
+    "texto": "MEI, ME e EPP de graus de risco 1 e 2 que declararem as informações digitais (1.6.1) e não identificarem exposições a agentes físicos, químicos, biológicos e riscos relacionados a fatores ergonômicos ficam dispensados de elaborar o PCMSO.",
+    "aso": { "item": "1.8.7.1", "texto": "A dispensa do PCMSO não desobriga a realização dos exames médicos e a emissão do ASO." }
+  },
+  "demais": { "item": "1.8.5", "texto": "A dispensa vale para a elaboração do PGR e não afasta as demais disposições das NR." },
+  "responsavel": { "item": "1.8.8", "texto": "O empregador é o responsável pela prestação das informações." }
+}
