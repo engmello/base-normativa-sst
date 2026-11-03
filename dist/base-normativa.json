@@ -1,8 +1,8 @@
 {
  "nome": "Base normativa SST",
- "versao": "2026.10.28-475c4c",
- "hash": "475c4c7e8392",
- "gerado": "2026-10-28T13:38:24.387Z",
+ "versao": "2026.11.03-7431b2",
+ "hash": "7431b269447f",
+ "gerado": "2026-11-03T21:18:33.824Z",
  "itens": [
   {
    "id": "esocial-tabela-24",
@@ -7687,6 +7687,653 @@
        "danos": "Estresse, ansiedade, depressão, esgotamento profissional"
       }
      ]
+    }
+   }
+  },
+  {
+   "id": "nr01-participacao-acidentes",
+   "titulo": "NR-01 – Análise de acidentes, participação dos trabalhadores e contratadas",
+   "tipo": "regra",
+   "arquivo": "regras/nr01-participacao-acidentes.json",
+   "fonte": {
+    "orgao": "MTE",
+    "ato": "NR-01, itens 1.5.3.3, 1.5.5.5 e 1.5.8",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-30",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "PGR",
+    "Plano de ação",
+    "Conferência técnica"
+   ],
+   "hash": "72a49c49b70d",
+   "dados": {
+    "descricao": "NR-01: análise de acidentes e doenças relacionadas ao trabalho (1.5.5.5), participação e consulta aos trabalhadores e comunicação dos riscos (1.5.3.3) e GRO nas relações com contratadas (1.5.8) — conferido com o texto da NR-01 atualizada em 2025 (fontes/pdf/NR-01-atualizada-2025.pdf) em 2026-10-30.",
+    "analiseAcidentes": {
+     "item": "1.5.5.5",
+     "eventos": [
+      {
+       "id": "acidente",
+       "nome": "Acidente do trabalho",
+       "item": "1.5.5.5.1"
+      },
+      {
+       "id": "doenca",
+       "nome": "Doença relacionada ao trabalho",
+       "item": "1.5.5.5.1"
+      },
+      {
+       "id": "evento_perigoso",
+       "nome": "Evento perigoso que poderia ter consequências graves",
+       "item": "1.5.5.5.1.1"
+      }
+     ],
+     "situacoesGeradoras": {
+      "item": "1.5.5.5.2 a",
+      "fatores": [
+       {
+        "id": "atividade",
+        "nome": "Atividades efetivamente desenvolvidas"
+       },
+       {
+        "id": "ambiente",
+        "nome": "Ambiente de trabalho"
+       },
+       {
+        "id": "materiais",
+        "nome": "Materiais"
+       },
+       {
+        "id": "processo",
+        "nome": "Processo produtivo"
+       },
+       {
+        "id": "organizacao",
+        "nome": "Organização do trabalho"
+       },
+       {
+        "id": "outros",
+        "nome": "Outros fatores relacionados com o evento"
+       }
+      ]
+     },
+     "dadosConsiderados": {
+      "item": "1.5.5.5.2 b",
+      "campos": [
+       {
+        "id": "organizacao",
+        "nome": "Dados da organização"
+       },
+       {
+        "id": "epidemiologicos",
+        "nome": "Dados epidemiológicos"
+       },
+       {
+        "id": "trabalhadores",
+        "nome": "Informações prestadas pelos trabalhadores"
+       }
+      ]
+     },
+     "evidencias": {
+      "item": "1.5.5.5.2 c",
+      "texto": "fornecer evidências para revisar e aprimorar as medidas de prevenção existentes"
+     },
+     "documentada": {
+      "item": "1.5.5.5.2",
+      "texto": "As análises de acidentes e doenças relacionadas ao trabalho devem ser documentadas."
+     }
+    },
+    "participacao": {
+     "item": "1.5.3.3",
+     "consulta": {
+      "alinea": "b",
+      "texto": "a consulta aos trabalhadores quanto à percepção de riscos ocupacionais, podendo para este fim ser adotadas as manifestações da CIPA, quando houver"
+     },
+     "comunicacao": {
+      "alinea": "c",
+      "texto": "comunicar aos trabalhadores os riscos consolidados no inventário de riscos e as medidas de prevenção previstas no plano de ação"
+     },
+     "formasConsulta": [
+      "Manifestação da CIPA",
+      "Reunião",
+      "Questionário",
+      "Entrevista",
+      "DDS"
+     ],
+     "meiosComunicacao": [
+      "Ordem de serviço (OSS)",
+      "DDS",
+      "Treinamento",
+      "Mural ou cartaz",
+      "Reunião",
+      "Meio digital"
+     ]
+    },
+    "contratadas": {
+     "item": "1.5.8",
+     "modos": [
+      {
+       "id": "pgr_contratante",
+       "nome": "Incluídas no PGR da contratante",
+       "item": "1.5.8.1"
+      },
+      {
+       "id": "programa_contratada",
+       "nome": "Programa da contratada (inventário e plano de ação fornecidos)",
+       "item": "1.5.8.1.1"
+      },
+      {
+       "id": "titular_socios",
+       "nome": "Serviço só pelo titular ou sócios — medidas da contratante estendidas",
+       "item": "1.5.8.1.2"
+      }
+     ],
+     "informarContratada": {
+      "item": "1.5.8.2",
+      "texto": "A contratante informa à contratada os riscos sob sua responsabilidade que possam impactar nas atividades da contratada."
+     },
+     "informarContratante": {
+      "item": "1.5.8.3",
+      "texto": "A contratada informa à contratante os riscos sob sua responsabilidade que possam impactar nas atividades da contratante."
+     },
+     "medidasConjuntas": {
+      "item": "1.5.8.4",
+      "texto": "Riscos que resultem da interação das atividades: medidas de prevenção definidas em conjunto, sob a coordenação da contratante."
+     }
+    }
+   }
+  },
+  {
+   "id": "nr01-dispensa-me-epp",
+   "titulo": "NR-01 – Dispensa de PGR e PCMSO para MEI, ME e EPP (1.8)",
+   "tipo": "regra",
+   "arquivo": "regras/nr01-dispensa-me-epp.json",
+   "fonte": {
+    "orgao": "MTE",
+    "ato": "NR-01, item 1.8",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-01-atualizada-2025-i-3.pdf",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-30",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "PGR",
+    "PCMSO",
+    "Conferência técnica"
+   ],
+   "hash": "1e6a51e87cd1",
+   "dados": {
+    "descricao": "NR-01 1.8 – tratamento diferenciado ao MEI, ME e EPP: dispensa de elaborar o PGR e o PCMSO — conferido com o texto da NR-01 atualizada em 2025 em 2026-10-30. A dispensa vale só para a elaboração do documento (1.8.5); os graus de risco são os da NR-04 (1.8.7).",
+    "item": "1.8",
+    "pgr": {
+     "mei": {
+      "item": "1.8.1",
+      "texto": "O MEI está dispensado de elaborar o PGR; a contratante do MEI deve incluí-lo nas suas ações de prevenção e no seu PGR quando ele atuar em suas dependências (1.8.1.1)."
+     },
+     "meEpp": {
+      "item": "1.8.4",
+      "portes": [
+       "ME",
+       "EPP"
+      ],
+      "grausDeRisco": [
+       1,
+       2
+      ],
+      "semExposicao": [
+       "Físico",
+       "Químico",
+       "Biológico"
+      ],
+      "texto": "ME e EPP de graus de risco 1 e 2 que, no levantamento preliminar de perigos, não identificarem exposições ocupacionais a agentes físicos, químicos e biológicos e declararem as informações digitais (1.6.1) ficam dispensadas da elaboração do PGR."
+     },
+     "divulgar": {
+      "item": "1.8.4.1",
+      "texto": "As informações digitais declaradas devem ser divulgadas junto aos trabalhadores."
+     }
+    },
+    "pcmso": {
+     "item": "1.8.6",
+     "portes": [
+      "MEI",
+      "ME",
+      "EPP"
+     ],
+     "grausDeRisco": [
+      1,
+      2
+     ],
+     "semExposicao": [
+      "Físico",
+      "Químico",
+      "Biológico",
+      "Ergonômico"
+     ],
+     "texto": "MEI, ME e EPP de graus de risco 1 e 2 que declararem as informações digitais (1.6.1) e não identificarem exposições a agentes físicos, químicos, biológicos e riscos relacionados a fatores ergonômicos ficam dispensados de elaborar o PCMSO.",
+     "aso": {
+      "item": "1.8.7.1",
+      "texto": "A dispensa do PCMSO não desobriga a realização dos exames médicos e a emissão do ASO."
+     }
+    },
+    "demais": {
+     "item": "1.8.5",
+     "texto": "A dispensa vale para a elaboração do PGR e não afasta as demais disposições das NR."
+    },
+    "responsavel": {
+     "item": "1.8.8",
+     "texto": "O empregador é o responsável pela prestação das informações."
+    }
+   }
+  },
+  {
+   "id": "nr04-sesmt",
+   "titulo": "NR-04 – Dimensionamento do SESMT (Anexo II)",
+   "tipo": "regra",
+   "arquivo": "regras/nr04-sesmt.json",
+   "fonte": {
+    "orgao": "MTE",
+    "ato": "NR-04, item 4.5 e Anexo II (Portaria MTP 2.318/2022)",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-04-atualizada-2023.pdf",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-30",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "Empregadores",
+    "Conferência técnica"
+   ],
+   "hash": "b1969bfa405e",
+   "dados": {
+    "descricao": "NR-04 – dimensionamento do SESMT (item 4.5 e Anexo II) — conferido com o texto da NR-04 (fontes/pdf) em 2026-10-30. Valores por grau de risco e faixa de empregados do estabelecimento; '*' tempo parcial (mínimo de três horas); '***' o auxiliar/técnico de enfermagem pode ser substituído por enfermeiro do trabalho em tempo parcial.",
+    "item": "4.5 e Anexo II",
+    "regras": {
+     "contagem": "4.5.1: número de empregados da organização no estabelecimento e o maior grau de risco entre a atividade principal (CNPJ, 4.5.1.1) e a preponderante (que ocupa mais trabalhadores, 4.5.1.2).",
+     "terceiros": "4.5.2: somam-se os trabalhadores das contratadas em trabalho não eventual nas dependências da contratante, salvo os atendidos pelo SESMT das contratadas (4.5.2.2)."
+    },
+    "faixas": [
+     {
+      "id": "50-100",
+      "de": 50,
+      "ate": 100
+     },
+     {
+      "id": "101-250",
+      "de": 101,
+      "ate": 250
+     },
+     {
+      "id": "251-500",
+      "de": 251,
+      "ate": 500
+     },
+     {
+      "id": "501-1000",
+      "de": 501,
+      "ate": 1000
+     },
+     {
+      "id": "1001-2000",
+      "de": 1001,
+      "ate": 2000
+     },
+     {
+      "id": "2001-3500",
+      "de": 2001,
+      "ate": 3500
+     },
+     {
+      "id": "3501-5000",
+      "de": 3501,
+      "ate": 5000
+     }
+    ],
+    "acima5000": {
+     "grupo": 4000,
+     "fracaoMinima": 2000,
+     "texto": "(**) Acima de 5.000: o dimensionamento da faixa de 3.501 a 5.000, acrescido do de cada grupo de 4.000 ou fração acima de 2.000."
+    },
+    "profissionais": [
+     {
+      "id": "tecnico",
+      "nome": "Técnico de Segurança do Trabalho"
+     },
+     {
+      "id": "engenheiro",
+      "nome": "Engenheiro de Segurança do Trabalho"
+     },
+     {
+      "id": "aux_enfermagem",
+      "nome": "Auxiliar/Técnico de Enfermagem do Trabalho"
+     },
+     {
+      "id": "enfermeiro",
+      "nome": "Enfermeiro do Trabalho"
+     },
+     {
+      "id": "medico",
+      "nome": "Médico do Trabalho"
+     }
+    ],
+    "quadro": {
+     "1": {
+      "tecnico": {
+       "501-1000": "1",
+       "1001-2000": "1",
+       "2001-3500": "1",
+       "3501-5000": "2",
+       "acima": "1"
+      },
+      "engenheiro": {
+       "2001-3500": "1*",
+       "3501-5000": "1",
+       "acima": "1*"
+      },
+      "aux_enfermagem": {
+       "2001-3500": "1***",
+       "3501-5000": "1",
+       "acima": "1"
+      },
+      "enfermeiro": {
+       "3501-5000": "1*"
+      },
+      "medico": {
+       "1001-2000": "1*",
+       "2001-3500": "1*",
+       "3501-5000": "1",
+       "acima": "1*"
+      }
+     },
+     "2": {
+      "tecnico": {
+       "501-1000": "1",
+       "1001-2000": "1",
+       "2001-3500": "2",
+       "3501-5000": "5",
+       "acima": "1"
+      },
+      "engenheiro": {
+       "1001-2000": "1*",
+       "2001-3500": "1",
+       "3501-5000": "1",
+       "acima": "1*"
+      },
+      "aux_enfermagem": {
+       "1001-2000": "1***",
+       "2001-3500": "1***",
+       "3501-5000": "1",
+       "acima": "1"
+      },
+      "enfermeiro": {
+       "3501-5000": "1"
+      },
+      "medico": {
+       "1001-2000": "1*",
+       "2001-3500": "1",
+       "3501-5000": "1",
+       "acima": "1"
+      }
+     },
+     "3": {
+      "tecnico": {
+       "101-250": "1",
+       "251-500": "2",
+       "501-1000": "3",
+       "1001-2000": "4",
+       "2001-3500": "6",
+       "3501-5000": "8",
+       "acima": "3"
+      },
+      "engenheiro": {
+       "501-1000": "1*",
+       "1001-2000": "1",
+       "2001-3500": "1",
+       "3501-5000": "2",
+       "acima": "1"
+      },
+      "aux_enfermagem": {
+       "1001-2000": "1***",
+       "2001-3500": "1",
+       "3501-5000": "1",
+       "acima": "1"
+      },
+      "enfermeiro": {
+       "2001-3500": "1",
+       "3501-5000": "1"
+      },
+      "medico": {
+       "501-1000": "1*",
+       "1001-2000": "1",
+       "2001-3500": "1",
+       "3501-5000": "2",
+       "acima": "1"
+      }
+     },
+     "4": {
+      "tecnico": {
+       "50-100": "1",
+       "101-250": "2",
+       "251-500": "3",
+       "501-1000": "4",
+       "1001-2000": "5",
+       "2001-3500": "8",
+       "3501-5000": "10",
+       "acima": "3"
+      },
+      "engenheiro": {
+       "101-250": "1*",
+       "251-500": "1*",
+       "501-1000": "1",
+       "1001-2000": "1",
+       "2001-3500": "2",
+       "3501-5000": "3",
+       "acima": "1"
+      },
+      "aux_enfermagem": {
+       "501-1000": "1***",
+       "1001-2000": "1***",
+       "2001-3500": "1",
+       "3501-5000": "1",
+       "acima": "1"
+      },
+      "enfermeiro": {
+       "2001-3500": "1",
+       "3501-5000": "1"
+      },
+      "medico": {
+       "101-250": "1*",
+       "251-500": "1*",
+       "501-1000": "1",
+       "1001-2000": "1",
+       "2001-3500": "2",
+       "3501-5000": "3",
+       "acima": "1"
+      }
+     }
+    },
+    "notas": {
+     "*": "Tempo parcial (mínimo de três horas).",
+     "***": "O empregador pode optar pela contratação de um enfermeiro do trabalho em tempo parcial, em substituição ao auxiliar ou técnico de enfermagem do trabalho."
+    }
+   }
+  },
+  {
+   "id": "nr17-aep",
+   "titulo": "NR-17 – Avaliação ergonômica preliminar (AEP) e AET",
+   "tipo": "regra",
+   "arquivo": "regras/nr17-aep.json",
+   "fonte": {
+    "orgao": "MTE",
+    "ato": "NR-17, item 17.3 (Portaria MTP 423/2021)",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-17-atualizada-2023.pdf",
+    "pdf": ""
+   },
+   "versao": "2026.1",
+   "vigencia": {
+    "inicio": "2026-10-29",
+    "fim": ""
+   },
+   "status": "rascunho",
+   "conferido": {
+    "por": "",
+    "em": ""
+   },
+   "usadoEm": [
+    "PGR",
+    "Inventário de riscos",
+    "Plano de ação",
+    "Conferência técnica"
+   ],
+   "hash": "306fdc3ffcff",
+   "dados": {
+    "descricao": "Avaliação ergonômica preliminar (AEP) e Análise Ergonômica do Trabalho (AET) da NR-17, item 17.3 — conferido com o texto da NR-17 atualizada em 2023 (fontes/pdf/NR-17-atualizada-2023.pdf) em 2026-10-29.",
+    "fatores": [
+     {
+      "id": "organizacao",
+      "item": "17.4",
+      "nome": "Organização do trabalho"
+     },
+     {
+      "id": "cargas",
+      "item": "17.5",
+      "nome": "Levantamento, transporte e descarga individual de cargas"
+     },
+     {
+      "id": "mobiliario",
+      "item": "17.6",
+      "nome": "Mobiliário dos postos de trabalho"
+     },
+     {
+      "id": "equipamentos",
+      "item": "17.7",
+      "nome": "Trabalho com máquinas, equipamentos e ferramentas manuais"
+     },
+     {
+      "id": "conforto",
+      "item": "17.8",
+      "nome": "Condições de conforto no ambiente de trabalho"
+     }
+    ],
+    "abordagens": {
+     "item": "17.3.1.1",
+     "opcoes": [
+      "Qualitativa",
+      "Semiquantitativa",
+      "Quantitativa",
+      "Combinação"
+     ]
+    },
+    "registro": {
+     "item": "17.3.1.2.1",
+     "texto": "A avaliação ergonômica preliminar das situações de trabalho deve ser registrada pela organização."
+    },
+    "ouvirTrabalhadores": {
+     "item": "17.3.8",
+     "texto": "A organização deve garantir que os empregados sejam ouvidos durante o processo da avaliação ergonômica preliminar e na AET."
+    },
+    "aetQuando": {
+     "item": "17.3.2",
+     "alineas": [
+      {
+       "alinea": "a",
+       "texto": "observada a necessidade de uma avaliação mais aprofundada da situação"
+      },
+      {
+       "alinea": "b",
+       "texto": "identificadas inadequações ou insuficiência das ações adotadas"
+      },
+      {
+       "alinea": "c",
+       "texto": "sugerida pelo acompanhamento de saúde dos trabalhadores, nos termos do PCMSO e da alínea \"c\" do subitem 1.5.5.1.1 da NR-01"
+      },
+      {
+       "alinea": "d",
+       "texto": "indicada causa relacionada às condições de trabalho na análise de acidentes e doenças relacionadas ao trabalho, nos termos do PGR"
+      }
+     ]
+    },
+    "aetEtapas": {
+     "item": "17.3.3",
+     "etapas": [
+      {
+       "alinea": "a",
+       "texto": "análise da demanda e, quando aplicável, reformulação do problema"
+      },
+      {
+       "alinea": "b",
+       "texto": "análise do funcionamento da organização, dos processos, das situações de trabalho e da atividade"
+      },
+      {
+       "alinea": "c",
+       "texto": "descrição e justificativa para definição de métodos, técnicas e ferramentas adequados para a análise e sua aplicação"
+      },
+      {
+       "alinea": "d",
+       "texto": "estabelecimento de diagnóstico"
+      },
+      {
+       "alinea": "e",
+       "texto": "recomendações para as situações de trabalho analisadas"
+      },
+      {
+       "alinea": "f",
+       "texto": "restituição dos resultados, validação e revisão das intervenções efetuadas, quando necessária, com a participação dos trabalhadores"
+      }
+     ]
+    },
+    "dispensaAet": {
+     "item": "17.3.4 e 17.3.4.1",
+     "portes": [
+      "ME",
+      "EPP"
+     ],
+     "grausDeRisco": [
+      1,
+      2
+     ],
+     "mei": true,
+     "excetoAlineas": [
+      "c",
+      "d"
+     ],
+     "texto": "ME e EPP de graus de risco 1 e 2 e o MEI não são obrigados a elaborar a AET; ME e EPP de graus 1 e 2 devem realizá-la nas situações das alíneas \"c\" e \"d\" do 17.3.2."
+    },
+    "inventario": {
+     "item": "17.3.5",
+     "texto": "Integram o inventário de riscos do PGR os resultados da avaliação ergonômica preliminar e a revisão da identificação dos perigos e da avaliação dos riscos indicada pela AET."
+    },
+    "planoAcao": {
+     "item": "17.3.6",
+     "texto": "Planos de ação, nos termos do PGR, para as medidas decorrentes da avaliação ergonômica preliminar e para as recomendações da AET."
+    },
+    "guardaAetAnos": {
+     "item": "17.3.7",
+     "valor": 20
     }
    }
   }
